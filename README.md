@@ -1,5 +1,7 @@
 # SECDaily
 
+[中文](README.md) · [English](README_EN.md)
+
 > 安全资讯 RSS 日报：聚合、归档、搜索与单条 AI 分析  
 > **仓库**：[github.com/shellsec/SECDaily](https://github.com/shellsec/SECDaily) · **问题反馈**：[Issues](https://github.com/shellsec/SECDaily/issues)
 
@@ -17,21 +19,6 @@
 
 开源不易，欢迎赞助支持：  
 👉 [爱发电](https://ifdian.net/a/shellsec)
-
-## 🚀 Recommended: [ofox.ai](https://ofox.io/x/aiv123)
-
-> **In short**: One account for GPT-5.5 / Claude 4.8 Opus / Gemini 3.5 Flash and **100+** top models. First top-up gets an extra **$3** credit.
-
-[👉 Sign up](https://ofox.io/x/aiv123) · Global dedicated lines · Enterprise SLA · No conversation retention
-
-| ⚡️ Fast & Stable | 🧠 Full Model Coverage | 🛡️ Privacy |
-|:---:|:---:|:---:|
-| Global dedicated lines, enterprise SLA | 100+ models, one account | No conversation retention |
-
-## ☕ Buy Me a Coke
-
-Open source takes effort — sponsorship is welcome:  
-👉 [爱发电 / Afdian](https://ifdian.net/a/shellsec)
 
 ## 项目简介
 
