@@ -3,10 +3,35 @@
 > 安全资讯 RSS 日报：聚合、归档、搜索与单条 AI 分析  
 > **仓库**：[github.com/shellsec/SECDaily](https://github.com/shellsec/SECDaily) · **问题反馈**：[Issues](https://github.com/shellsec/SECDaily/issues)
 
+## 🚀 推荐使用 [ofox.ai](https://ofox.io/x/aiv123)
+
+> **一句话**：一个账号直达 GPT-5.5 / Claude 4.8 Opus / Gemini 3.5 Flash 等 **100+** 顶尖模型，首充额外赠 **$3** 额度。
+
+[👉 注册领取](https://ofox.io/x/aiv123) · 全球专线 · 企业级 SLA · 不留存对话
+
+| ⚡️ 极速稳定 | 🧠 模型全 | 🛡️ 隐私安全 |
+|:---:|:---:|:---:|
+| 全球专线，企业级 SLA | 100+ 模型一号直达 | 不留存任何对话 |
+
 ## ☕ 请我喝可乐
 
 开源不易，欢迎赞助支持：  
 👉 [爱发电](https://ifdian.net/a/shellsec)
+
+## 🚀 Recommended: [ofox.ai](https://ofox.io/x/aiv123)
+
+> **In short**: One account for GPT-5.5 / Claude 4.8 Opus / Gemini 3.5 Flash and **100+** top models. First top-up gets an extra **$3** credit.
+
+[👉 Sign up](https://ofox.io/x/aiv123) · Global dedicated lines · Enterprise SLA · No conversation retention
+
+| ⚡️ Fast & Stable | 🧠 Full Model Coverage | 🛡️ Privacy |
+|:---:|:---:|:---:|
+| Global dedicated lines, enterprise SLA | 100+ models, one account | No conversation retention |
+
+## ☕ Buy Me a Coke
+
+Open source takes effort — sponsorship is welcome:  
+👉 [爱发电 / Afdian](https://ifdian.net/a/shellsec)
 
 ## 项目简介
 
