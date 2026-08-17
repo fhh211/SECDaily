@@ -126,13 +126,13 @@ MCP is for Cursor / Claude Desktop; see `mcp.example.json`. Endpoints, parameter
 
 | Capability | Where | Notes |
 |------|------|------|
-| **Date archive** | `archive/index.html` | Browse past digests by year/month |
+| **Date archive** | Repo root `index.html` (and `archive/index.html`) | Browse past digests by year/month |
 | **Site-wide title search** | Archive home → “Title search” | Searches titles, sources, CVE (needs `search-index.json`) |
 | **Jump to search from a daily page** | Search box in daily HTML header | Opens archive home with the query |
 | **In-page filter** | Daily HTML toolbar | Filters current page titles / CVE only; no index file |
 | **Word cloud & CVE stats** | Daily HTML | Computed by `convert_today.py` from that day’s content |
 | **Per-item AI analysis** | Daily list / title search results | **ChatGPT → Gemini → DeepSeek**; copies prompt then opens the AI |
-| **One-click API / MCP setup** | Archive home `#connect` panel | Copy clone command, Cursor / Claude config, and REST examples |
+| **One-click API / MCP setup** | Repo root `index.html` `#connect` panel | Copy clone command, Cursor / Claude config, and REST examples |
 
 #### Per-item AI analysis (ChatGPT / Gemini / DeepSeek)
 

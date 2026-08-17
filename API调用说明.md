@@ -7,7 +7,7 @@ SECDaily 提供两套只读查询接口，共用 `archive/` 下的 Markdown 日�
 
 默认不需要额外依赖。API 默认只监听本机 `127.0.0.1:8765`。
 
-归档首页和日报页都有 **一键接入** 面板：MCP 配置、API 接口表、curl / PowerShell / Python / 对话示例均可一键复制。
+归档首页（仓库根目录 `index.html`，或 `archive/index.html`）顶部有 **一键接入** 面板：MCP 配置、API 接口表、curl / PowerShell / Python / 对话示例均可一键复制。
 
 ## 一键接入
 

@@ -828,7 +828,7 @@
                     </div>
                 </div>
                 {% if recent_days and recent_days|length > 0 %}
-                <a class="header-cta" href="{{ recent_days[0].path }}" target="_blank">阅读最新 →</a>
+                <a class="header-cta" href="{{ archive_prefix }}{{ recent_days[0].path }}" target="_blank">阅读最新 →</a>
                 {% endif %}
             </div>
         </div>
@@ -842,7 +842,7 @@
             </div>
             <div class="recent-grid">
                 {% for day in recent_days %}
-                <a href="{{ day.path }}" class="recent-card{% if loop.first %} is-latest{% endif %}" target="_blank" title="{{ day.date }}">
+                <a href="{{ archive_prefix }}{{ day.path }}" class="recent-card{% if loop.first %} is-latest{% endif %}" target="_blank" title="{{ day.date }}">
                     <div class="recent-day">{% if loop.first %}最新{% else %}日报{% endif %}</div>
                     <div class="recent-date">{{ day.date[5:] if day.date|length > 5 else day.date }}</div>
                     {% if loop.first %}<div class="recent-label">今日推荐</div>{% endif %}
@@ -925,9 +925,9 @@
                 <span>|</span>
                 <a href="{{ github_url }}/blob/main/API调用说明.md" target="_blank" rel="noopener noreferrer">API / MCP 说明</a>
                 <span>|</span>
-                <a href="sitemap.xml" target="_blank">站点地图</a>
+                <a href="{{ archive_prefix }}sitemap.xml" target="_blank">站点地图</a>
                 <span>|</span>
-                <a href="robots.txt" target="_blank">Robots.txt</a>
+                <a href="{{ archive_prefix }}robots.txt" target="_blank">Robots.txt</a>
             </div>
             <div class="update-time">最后更新: {{ update_time }}</div>
         </div>
@@ -991,7 +991,8 @@
                 if (indexLoaded || indexLoading) return;
                 indexLoading = true;
                 try {
-                    const response = await fetch('search-index.json', { cache: 'no-cache' });
+                    const ARCHIVE_PREFIX = '{{ archive_prefix }}';
+                    const response = await fetch(ARCHIVE_PREFIX + 'search-index.json', { cache: 'no-cache' });
                     if (!response.ok) throw new Error('索引加载失败');
                     const data = await response.json();
                     searchIndex = Array.isArray(data) ? data : (data.articles || []);

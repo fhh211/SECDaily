@@ -967,117 +967,133 @@ def generate_index_html():
         # 生成索引内容
         try:
             current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            index_content = ""
             total_files = 0
-            all_urls = []  # 用于生成sitemap
-            all_articles = []  # 用于最近 N 天快捷入口
-            recent_days = []
-            
+            all_urls = []  # 用于生成sitemap（相对 archive/）
+            all_articles = []
+            articles_by_year = []
+
             for year in years:
                 year_dir = ARCHIVE_DIR / year
                 if not year_dir.exists():
                     logger.warning(f"年份目录不存在: {year_dir}")
                     year_dir.mkdir(parents=True, exist_ok=True)
                     continue
-                
+
                 try:
                     all_md_files = year_dir.glob('*.md')
                     md_files = sorted([f for f in all_md_files if not f.name.startswith('AISummary')], reverse=True)
                     if not md_files:
                         logger.info(f"年份 {year} 没有找到Markdown文件")
                         continue
-                    
-                    index_content += f'<div class="year-section" id="year-{year}">'
-                    index_content += f'<div class="year-title">{year}年</div>'
-                    index_content += f'<div class="article-grid">'
-                    
+
+                    year_items = []
                     for md_file in md_files:
                         html_file = md_file.with_suffix('.html')
-                        rel_path = os.path.join(year, html_file.name)
+                        rel_path = f'{year}/{html_file.name}'.replace('\\', '/')
                         date_str = md_file.stem
                         all_urls.append(rel_path)
-                        
-                        index_content += f'''<a href="{rel_path}" class="article-card" target="_blank" data-date="{date_str}">
-                            <div class="article-date">{date_str}</div>
-                            <div class="article-title">安全资讯日报</div>
-                        </a>'''
+                        year_items.append({'date': date_str, 'path': rel_path, 'year': year})
                         total_files += 1
-                        all_articles.append({
-                            'date': date_str,
-                            'path': rel_path.replace('\\', '/'),
-                            'year': year,
-                        })
-                    
-                    index_content += '</div></div>'
+                        all_articles.append({'date': date_str, 'path': rel_path, 'year': year})
+
+                    articles_by_year.append((year, year_items))
                 except Exception as e:
                     logger.error(f"处理年份 {year} 时出错: {e}")
                     continue
-            
+
             all_articles.sort(key=lambda x: x['date'], reverse=True)
             recent_days = all_articles[:7]
             logger.info(f"索引内容生成完成，共 {total_files} 个文件")
         except Exception as e:
             logger.error(f"生成索引内容时出错: {e}")
-            index_content = f"<div class='content'><h1>安全资讯归档</h1><p>生成索引时出错: {str(e)}</p></div>"
+            articles_by_year = []
             all_urls = []
             total_files = 0
             recent_days = []
-        
-        # 使用首页模板
+            current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        def build_index_content(prefix=''):
+            parts = []
+            for year, year_items in articles_by_year:
+                parts.append(f'<div class="year-section" id="year-{year}">')
+                parts.append(f'<div class="year-title">{year}年</div>')
+                parts.append('<div class="article-grid">')
+                for item in year_items:
+                    href = f"{prefix}{item['path']}"
+                    parts.append(
+                        f'<a href="{href}" class="article-card" target="_blank" data-date="{item["date"]}">'
+                        f'<div class="article-date">{item["date"]}</div>'
+                        f'<div class="article-title">安全资讯日报</div>'
+                        f'</a>'
+                    )
+                parts.append('</div></div>')
+            return ''.join(parts)
+
         template_file = INDEX_TEMPLATE_FILE if INDEX_TEMPLATE_FILE.exists() else TEMPLATE_FILE
         if not template_file.exists():
             error_msg = f"模板文件不存在: {template_file}"
             logger.error(error_msg)
             raise FileNotFoundError(error_msg)
-        
-        # 使用模板渲染
+
         try:
             with open(template_file, 'r', encoding='utf-8') as f:
                 template = Template(f.read())
-            
+
             latest_year = years[0] if years else str(datetime.datetime.now().year)
-            full_html = template.render(
-                title="安全资讯归档",
-                content=index_content,
-                total_files=total_files,
-                total_years=len(years),
-                latest_year=latest_year,
-                update_time=current_time,
-                year=datetime.datetime.now().year,
-                recent_days=recent_days,
-                years_list=years,
-                site_name=SITE_NAME,
-                site_tagline=SITE_TAGLINE,
-                github_url=SITE_GITHUB_URL,
-                connect_panel=render_connect_panel(),
-            )
+            connect_panel = render_connect_panel()
+
+            def render_index(prefix=''):
+                return template.render(
+                    title="安全资讯归档",
+                    content=build_index_content(prefix),
+                    total_files=total_files,
+                    total_years=len(years),
+                    latest_year=latest_year,
+                    update_time=current_time,
+                    year=datetime.datetime.now().year,
+                    recent_days=recent_days,
+                    years_list=years,
+                    site_name=SITE_NAME,
+                    site_tagline=SITE_TAGLINE,
+                    github_url=SITE_GITHUB_URL,
+                    connect_panel=connect_panel,
+                    archive_prefix=prefix,
+                )
+
+            archive_html = render_index('')
+            root_html = render_index('archive/')
             logger.info("模板渲染成功")
         except Exception as e:
             logger.error(f"渲染模板时出错: {e}")
-            full_html = f"""<!DOCTYPE html>
+            archive_html = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>安全资讯归档</title>
 </head>
 <body>
-    {index_content}
+    {build_index_content() if articles_by_year else ''}
     <footer>
         <p>&copy; {datetime.datetime.now().year} {SITE_NAME}</p>
     </footer>
 </body>
 </html>"""
-        
-        # 写入索引文件
+            root_html = archive_html
+
         index_file = ARCHIVE_DIR / 'index.html'
+        root_index = BASE_DIR / 'index.html'
         try:
             with open(index_file, 'w', encoding='utf-8') as f:
-                f.write(full_html)
-            
+                f.write(archive_html)
+            with open(root_index, 'w', encoding='utf-8') as f:
+                f.write(root_html)
+            (BASE_DIR / '.nojekyll').touch(exist_ok=True)
+
             if not index_file.exists():
                 raise IOError(f"索引文件未成功创建: {index_file}")
-            
+
             logger.info(f"成功生成索引文件: {index_file}")
+            logger.info(f"成功生成站点首页: {root_index}")
             return True, all_urls
         except Exception as e:
             logger.error(f"写入索引文件失败: {e}")

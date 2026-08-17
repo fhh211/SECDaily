@@ -130,12 +130,12 @@ MCP 供 Cursor / Claude Desktop 使用，配置模板见 `mcp.example.json`。�
 
 | 能力 | 位置 | 说明 |
 |------|------|------|
-| **日期归档** | `archive/index.html` | 首页按年/月浏览历史日报 |
+| **日期归档** | 仓库根目录 `index.html`（与 `archive/index.html`） | 首页按年/月浏览历史日报 |
 | **全站标题搜索** | 归档首页 →「标题搜索」 | 检索历史文章标题、来源、CVE（依赖 `search-index.json`） |
 | **从日报跳转搜索** | 各日 HTML 顶栏搜索框 | 提交后跳转到归档首页并带关键词 |
 | **单日筛选** | 各日 HTML 工具栏 | 仅过滤当前页文章标题 / CVE，无需索引文件 |
 | **词云与 CVE 统计** | 各日 HTML 页面内 | 由 `convert_today.py` 从当日内容自动统计 |
-| **一键接入 API / MCP** | 归档首页顶栏与 `#connect` 面板 | 复制克隆命令、Cursor / Claude 配置、REST 调用；日报页导航可跳转 |
+| **一键接入 API / MCP** | 仓库根目录 `index.html` 顶部 `#connect` | 复制克隆命令、Cursor / Claude 配置、REST 调用；日报页导航可跳转 |
 
 #### 单条 AI 分析（ChatGPT / Gemini / DeepSeek）
 
