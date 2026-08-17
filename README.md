@@ -68,8 +68,8 @@ SECDaily 是一个安全资讯聚合工具，用于自动收集、整理和推�
 - `oneapi.py`: AI总结功能
 - `bot.py`: 推送机器人实现
 - `secdaily_data.py`: 归档查询层（API / MCP 共用）
-- `api_server.py`: REST API
-- `mcp_server.py`: MCP Server（stdio）
+- `api_server.py`: REST API 与 HTTP MCP（`http://127.0.0.1:8765/mcp`）
+- `mcp_server.py`: MCP Server（stdio 备选）
 - `connect_panel.html`: 归档页「一键接入」面板（API 接口表 + 调用示例）
 - `API调用说明.md` / `mcp.example.json`: 接口文档与 MCP 配置模板
 - `rss/`: RSS源文件目录
@@ -117,14 +117,25 @@ python convert_today.py
 ### REST API 与 MCP
 
 ```bash
-# REST API：http://127.0.0.1:8765/api/v1
+# 同一进程：REST http://127.0.0.1:8765/api/v1  MCP http://127.0.0.1:8765/mcp
 python api_server.py
 
-# 健康检查
 curl http://127.0.0.1:8765/api/v1/health
 ```
 
-MCP 供 Cursor / Claude Desktop 使用，配置模板见 `mcp.example.json`。完整端点、参数与错误码见 **[API调用说明.md](API调用说明.md)**。
+MCP 默认指向本机 URL，Cursor / Claude 配置：
+
+```json
+{
+  "mcpServers": {
+    "secdaily": {
+      "url": "http://127.0.0.1:8765/mcp"
+    }
+  }
+}
+```
+
+局域网把 `127.0.0.1` 换成机器 IP，并加 `--host 0.0.0.0`。无 HTTP 时才用 stdio：`python mcp_server.py`。完整端点见 **[API调用说明.md](API调用说明.md)**。
 
 ### 归档站点与搜索
 

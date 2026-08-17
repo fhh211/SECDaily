@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import sys
+import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Optional
@@ -20,6 +21,7 @@ from secdaily_data import (  # noqa: E402
     DEFAULT_PAGE_SIZE,
     ArchiveStore,
 )
+from mcp_server import McpServer  # noqa: E402
 
 try:
     from config_loader import load_dotenv_if_available
@@ -93,6 +95,7 @@ def openapi_spec(host: str, port: int) -> dict[str, Any]:
 
 class SecDailyAPIHandler(BaseHTTPRequestHandler):
     store: ArchiveStore
+    mcp: McpServer
     api_key: str = ""
     server_host: str = DEFAULT_HOST
     server_port: int = DEFAULT_PORT
@@ -109,13 +112,28 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
     def do_POST(self) -> None:  # noqa: N802
         self._dispatch()
 
-    def _send(self, status: int, body: bytes, content_type: str = "application/json; charset=utf-8") -> None:
+    def do_DELETE(self) -> None:  # noqa: N802
+        self._dispatch()
+
+    def _send(
+        self,
+        status: int,
+        body: bytes,
+        content_type: str = "application/json; charset=utf-8",
+        extra_headers: Optional[dict[str, str]] = None,
+    ) -> None:
         self.send_response(status)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-API-Key")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header(
+            "Access-Control-Allow-Headers",
+            "Content-Type, Authorization, X-API-Key, Accept, Mcp-Session-Id, Last-Event-ID",
+        )
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS")
+        if extra_headers:
+            for key, value in extra_headers.items():
+                self.send_header(key, value)
         self.end_headers()
         if self.command != "HEAD":
             self.wfile.write(body)
@@ -129,7 +147,7 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
         bearer = auth.split(" ", 1)[1].strip() if auth.lower().startswith("bearer ") else ""
         return header_key == expected or bearer == expected
 
-    def _read_json_body(self) -> dict[str, Any]:
+    def _read_json_body(self) -> Any:
         length = int(self.headers.get("Content-Length") or 0)
         if length <= 0:
             return {}
@@ -139,8 +157,8 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
         if not raw:
             return {}
         data = json.loads(raw.decode("utf-8"))
-        if not isinstance(data, dict):
-            raise ValueError("请求体必须是 JSON 对象")
+        if not isinstance(data, dict) and not isinstance(data, list):
+            raise ValueError("请求体必须是 JSON 对象或数组")
         return data
 
     def _dispatch(self) -> None:
@@ -153,8 +171,10 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
                 "name": "SECDaily API",
                 "version": "1.0.0",
                 "docs": "/api/v1/openapi.json",
+                "mcp": f"http://{self.server_host}:{self.server_port}/mcp",
                 "endpoints": [
                     "GET /api/v1/health",
+                    "POST /mcp",
                     "GET /api/v1/dates",
                     "GET /api/v1/digest",
                     "GET /api/v1/digest/{date}",
@@ -174,6 +194,10 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
             self._send(status, body)
             return
 
+        if path == "/mcp":
+            self._handle_mcp()
+            return
+
         try:
             status, body = self._handle(path, params)
         except ValueError as exc:
@@ -185,6 +209,54 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
         except Exception as exc:  # pragma: no cover - unexpected
             status, body = json_bytes(error_body("INTERNAL_ERROR", "服务器内部错误", str(exc)), 500)
         self._send(status, body)
+
+    def _handle_mcp(self) -> None:
+        mcp_url = f"http://{self.server_host}:{self.server_port}/mcp"
+        extra = {"Mcp-Session-Id": self.headers.get("Mcp-Session-Id") or str(uuid.uuid4())}
+        if self.command == "GET":
+            status, body = json_bytes({
+                "name": "secdaily",
+                "transport": "streamable-http",
+                "url": mcp_url,
+                "api": f"http://{self.server_host}:{self.server_port}{API_PREFIX}",
+            })
+            self._send(status, body, extra_headers=extra)
+            return
+        if self.command == "DELETE":
+            self._send(200, b"", content_type="text/plain", extra_headers=extra)
+            return
+        if self.command != "POST":
+            status, body = json_bytes(error_body("VALIDATION_ERROR", "MCP 仅支持 GET/POST/DELETE"), 405)
+            self._send(status, body)
+            return
+
+        payload = self._read_json_body()
+        messages = payload if isinstance(payload, list) else [payload]
+        responses = []
+        for message in messages:
+            if not isinstance(message, dict):
+                continue
+            reply = self.mcp.handle(message)
+            if reply is not None:
+                responses.append(reply)
+
+        if not responses:
+            self._send(202, b"", content_type="text/plain", extra_headers=extra)
+            return
+
+        accept = (self.headers.get("Accept") or "").lower()
+        body_obj: Any = responses if isinstance(payload, list) or len(responses) > 1 else responses[0]
+        if "text/event-stream" in accept:
+            chunks = []
+            items = body_obj if isinstance(body_obj, list) else [body_obj]
+            for item in items:
+                data = json.dumps(item, ensure_ascii=False, separators=(",", ":"))
+                chunks.append(f"event: message\ndata: {data}\n\n")
+            raw = "".join(chunks).encode("utf-8")
+            self._send(200, raw, content_type="text/event-stream; charset=utf-8", extra_headers=extra)
+            return
+        status, body = json_bytes(body_obj)
+        self._send(status, body, extra_headers=extra)
 
     def _handle(self, path: str, params: dict[str, list[str]]) -> tuple[int, bytes]:
         store = self.store
@@ -258,6 +330,7 @@ def create_handler(store: ArchiveStore, api_key: str, host: str, port: int):
         pass
 
     BoundHandler.store = store
+    BoundHandler.mcp = McpServer(store)
     BoundHandler.api_key = api_key
     BoundHandler.server_host = host
     BoundHandler.server_port = port
@@ -279,6 +352,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     handler = create_handler(store, args.api_key, args.host, args.port)
     server = ThreadingHTTPServer((args.host, args.port), handler)
     print(f"SECDaily API 已启动: http://{args.host}:{args.port}{API_PREFIX}")
+    print(f"MCP: http://{args.host}:{args.port}/mcp")
     print(f"OpenAPI: http://{args.host}:{args.port}{API_PREFIX}/openapi.json")
     print(f"归档目录: {store.archive_dir}")
     if args.api_key:

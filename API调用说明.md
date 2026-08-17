@@ -18,32 +18,30 @@ cd SECDaily
 
 | 方式 | 怎么接 |
 |------|--------|
-| **Cursor MCP** | 用 Cursor 打开本仓库（已含 `.cursor/mcp.json`），Settings → MCP 启用 `secdaily` |
-| **Claude Desktop** | 把 `mcp.example.json` 写入 Claude 配置，`cwd` 改成本机仓库路径 |
-| **REST API** | `python api_server.py`，然后请求 `http://127.0.0.1:8765/api/v1` |
+| **MCP** | 先 `python api_server.py`，配置里填 `http://127.0.0.1:8765/mcp` |
+| **REST API** | 同一进程，请求 `http://127.0.0.1:8765/api/v1` |
 
 ```json
 {
   "mcpServers": {
     "secdaily": {
-      "command": "python",
-      "args": ["mcp_server.py"],
-      "cwd": "替换为 SECDaily 仓库根目录"
+      "url": "http://127.0.0.1:8765/mcp"
     }
   }
 }
 ```
 
-Windows 若 `python` 不在 PATH，把 `command` 改成 `py` 或 Python 完整路径。
+局域网把 `127.0.0.1` 换成机器 IP，并启动时加 `--host 0.0.0.0`。无网环境仍可用 stdio：`python mcp_server.py`。
 
 ## 启动参数
 
 ```bash
 python api_server.py --host 127.0.0.1 --port 8765 --archive-dir archive
-python mcp_server.py
 ```
 
-MCP 由 Cursor / Claude 拉起，不要当普通终端程序长时间前台跑（stdio 协议走标准输入输出）。
+同一进程提供 REST 与 MCP：`http://127.0.0.1:8765/api/v1` 和 `http://127.0.0.1:8765/mcp`。
+
+无 HTTP 时可用 stdio：`python mcp_server.py`（由 Cursor 拉起，不要当普通前台程序跑）。
 
 | 变量 | 说明 |
 |------|------|
@@ -69,6 +67,17 @@ OpenAPI：`GET /api/v1/openapi.json`
 |------|------|------|
 | GET | `/health` | 健康检查、最新日期 |
 | GET | `/dates` | 可用日报日期 |
+| GET | `/digest` | 最新一天日报 |
+| GET | `/digest/{date}` | 指定日期日报 |
+| GET | `/articles` | 关键词搜索（`/search` 为别名） |
+| GET | `/cves` | 从标题中检索 CVE |
+| GET | `/sources` | 来源列表 |
+| GET | `/summary` | 最新一天 AI 总结（若存在） |
+| GET | `/summary/{date}` | 指定日期 AI 总结 |
+| POST | `/analyze` | 需求文本 8 类安全评估 |
+| POST | `/reload` | 重载搜索索引缓存 |
+
+MCP 不走 `/api/v1` 前缀：`GET/POST /mcp`。
 | GET | `/digest` | 最新一天日报 |
 | GET | `/digest/{date}` | 指定日期日报 |
 | GET | `/articles` | 关键词搜索（`/search` 为别名） |
@@ -183,11 +192,23 @@ console.log(health.latestDate, news.data);
 
 ## MCP
 
-### Cursor
+### Cursor / Claude Desktop
 
-仓库已带 `.cursor/mcp.json`。用 Cursor 打开本仓库后，到 Settings → MCP 启用 `secdaily`。
+先启动 `python api_server.py`，配置默认指向本机 IP：
 
-其它项目可复制：
+```json
+{
+  "mcpServers": {
+    "secdaily": {
+      "url": "http://127.0.0.1:8765/mcp"
+    }
+  }
+}
+```
+
+局域网示例：`http://192.168.1.10:8765/mcp`（服务端 `--host 0.0.0.0`）。
+
+仓库已带 `.cursor/mcp.json`。无 HTTP 服务时才用 stdio：
 
 ```json
 {
@@ -200,13 +221,6 @@ console.log(health.latestDate, news.data);
   }
 }
 ```
-
-### Claude Desktop
-
-- macOS：`~/Library/Application Support/Claude/claude_desktop_config.json`
-- Windows：`%APPDATA%\Claude\claude_desktop_config.json`
-
-`cwd` 必须指向含 `archive/` 的仓库根目录。
 
 ### 工具列表
 

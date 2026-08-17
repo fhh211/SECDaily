@@ -150,6 +150,32 @@ class RestApiTests(unittest.TestCase):
         self.assertEqual(status, 404)
         self.assertEqual(body["error"]["code"], "NOT_FOUND")
 
+    def _post(self, path: str, payload: dict):
+        raw = json.dumps(payload).encode("utf-8")
+        conn = HTTPConnection("127.0.0.1", self.port, timeout=5)
+        conn.request("POST", path, body=raw, headers={"Content-Type": "application/json"})
+        resp = conn.getresponse()
+        body = json.loads(resp.read().decode("utf-8"))
+        conn.close()
+        return resp.status, body
+
+    def test_mcp_http_url(self):
+        status, body = self._get("/mcp")
+        self.assertEqual(status, 200)
+        self.assertEqual(body["transport"], "streamable-http")
+        self.assertTrue(body["url"].endswith("/mcp"))
+        status, body = self._post("/mcp", {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "initialize",
+            "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test"}},
+        })
+        self.assertEqual(status, 200)
+        self.assertEqual(body["result"]["serverInfo"]["name"], "secdaily")
+        status, body = self._post("/mcp", {"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
+        names = [item["name"] for item in body["result"]["tools"]]
+        self.assertIn("secdaily_search", names)
+
 
 if __name__ == "__main__":
     unittest.main()

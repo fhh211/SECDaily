@@ -64,8 +64,8 @@ SECDaily aggregates security-related RSS feeds, produces Markdown/HTML daily dig
 - `oneapi.py`: AI summary helpers
 - `bot.py`: Push bots
 - `secdaily_data.py`: Archive query layer shared by API and MCP
-- `api_server.py`: REST API
-- `mcp_server.py`: MCP server (stdio)
+- `api_server.py`: REST API and HTTP MCP (`http://127.0.0.1:8765/mcp`)
+- `mcp_server.py`: MCP server (stdio fallback)
 - `connect_panel.html`: One-click API / MCP panel on archive pages
 - `API调用说明.md` / `mcp.example.json`: API docs and MCP config template
 - `rss/`: RSS OPML sources
@@ -114,13 +114,25 @@ Builds today’s HTML and updates `archive/index.html`, `search-index.json` (sit
 ### REST API and MCP
 
 ```bash
-# REST API: http://127.0.0.1:8765/api/v1
+# Same process: REST http://127.0.0.1:8765/api/v1  MCP http://127.0.0.1:8765/mcp
 python api_server.py
 
 curl http://127.0.0.1:8765/api/v1/health
 ```
 
-MCP is for Cursor / Claude Desktop; see `mcp.example.json`. Endpoints, parameters, and error codes: **[API调用说明.md](API调用说明.md)**.
+MCP defaults to a local URL. Cursor / Claude config:
+
+```json
+{
+  "mcpServers": {
+    "secdaily": {
+      "url": "http://127.0.0.1:8765/mcp"
+    }
+  }
+}
+```
+
+On a LAN, replace `127.0.0.1` with the machine IP and start with `--host 0.0.0.0`. Use stdio (`python mcp_server.py`) only when HTTP is unavailable. Full endpoints: **[API调用说明.md](API调用说明.md)**.
 
 ### Archive site & search
 

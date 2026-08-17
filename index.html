@@ -1092,7 +1092,7 @@
     <div class="connect-grid">
         <article class="connect-card" id="mcp">
             <h3>MCP 一键接入</h3>
-            <p>克隆仓库后用 Cursor 打开该目录（已含 <code>.cursor/mcp.json</code>），在 Settings → MCP 启用 <code>secdaily</code>。</p>
+            <p>默认连本机 <code>http://127.0.0.1:8765/mcp</code>。先运行 <code>python api_server.py</code>，再把配置贴进 Cursor / Claude。</p>
             <div class="connect-toolbar">
                 <span>Cursor / Claude Desktop 配置</span>
                 <button type="button" class="copy-btn" data-copy-target="connectMcp">一键复制</button>
@@ -1100,9 +1100,7 @@
             <pre class="connect-code" id="connectMcp">{
   "mcpServers": {
     "secdaily": {
-      "command": "python",
-      "args": ["mcp_server.py"],
-      "cwd": "替换为 SECDaily 仓库根目录"
+      "url": "http://127.0.0.1:8765/mcp"
     }
   }
 }</pre>
@@ -1144,6 +1142,13 @@ python api_server.py</pre>
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td><span class="method">POST</span></td>
+                    <td><code>/mcp</code></td>
+                    <td>MCP（Streamable HTTP），默认本机 IP</td>
+                    <td class="api-example">http://127.0.0.1:8765/mcp</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="http://127.0.0.1:8765/mcp">复制</button></td>
+                </tr>
                 <tr>
                     <td><span class="method">GET</span></td>
                     <td><code>/api/v1/health</code></td>
@@ -1384,7 +1389,7 @@ print(cves["data"])</pre>
                 <span>|</span>
                 <a href="archive/robots.txt" target="_blank">Robots.txt</a>
             </div>
-            <div class="update-time">最后更新: 2026-08-17 15:04:36</div>
+            <div class="update-time">最后更新: 2026-08-17 15:08:37</div>
         </div>
     </div>
     
