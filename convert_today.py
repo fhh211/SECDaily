@@ -9,6 +9,7 @@ import html as html_module
 from pathlib import Path
 import markdown
 from jinja2 import Template
+from markupsafe import Markup
 
 ARTICLE_LINK_RE = re.compile(r'^\s+-\s+\[(.+?)\]\((.+?)\)')
 TOP_LEVEL_ITEM_RE = re.compile(r'^-\s+(.+)$')
@@ -17,6 +18,7 @@ SOURCE_H2_RE = re.compile(r'^##\s+(.+)$')
 SITE_NAME = 'SECDaily'
 SITE_TAGLINE = '每日安全资讯聚合与 AI 智能总结'
 SITE_GITHUB_URL = 'https://github.com/shellsec/SECDaily'
+SITE_DOCS_URL = SITE_GITHUB_URL + '/blob/main/API调用说明.md'
 DATE_MD_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 CVE_RE = re.compile(r'CVE-\d{4}-\d+', re.IGNORECASE)
 
@@ -34,6 +36,7 @@ BASE_DIR = Path(__file__).parent
 ARCHIVE_DIR = BASE_DIR / 'archive'
 TEMPLATE_FILE = BASE_DIR / 'template.html'
 INDEX_TEMPLATE_FILE = BASE_DIR / 'index_template.html'
+CONNECT_PANEL_FILE = BASE_DIR / 'connect_panel.html'
 
 # 配置日志
 logging.basicConfig(
@@ -45,6 +48,24 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+
+def render_connect_panel():
+    """渲染首页/日报页共用的 API / MCP 一键接入面板。"""
+    if not CONNECT_PANEL_FILE.exists():
+        logger.warning(f"接入面板模板不存在: {CONNECT_PANEL_FILE}")
+        return ''
+    try:
+        with open(CONNECT_PANEL_FILE, 'r', encoding='utf-8') as f:
+            snippet = Template(f.read())
+        return Markup(snippet.render(
+            github_url=SITE_GITHUB_URL,
+            docs_url=SITE_DOCS_URL,
+        ))
+    except Exception as e:
+        logger.warning(f"渲染接入面板失败: {e}")
+        return ''
+
 
 def ensure_template_exists():
     """确保模板文件存在，如果不存在则创建默认模板"""
@@ -537,6 +558,7 @@ def convert_md_to_html(md_file, html_file):
                 site_name=SITE_NAME,
                 site_tagline=SITE_TAGLINE,
                 github_url=SITE_GITHUB_URL,
+                connect_panel=render_connect_panel(),
             )
             logger.info("模板渲染成功")
         except Exception as e:
@@ -1027,6 +1049,7 @@ def generate_index_html():
                 site_name=SITE_NAME,
                 site_tagline=SITE_TAGLINE,
                 github_url=SITE_GITHUB_URL,
+                connect_panel=render_connect_panel(),
             )
             logger.info("模板渲染成功")
         except Exception as e:

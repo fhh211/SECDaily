@@ -37,6 +37,7 @@ SECDaily 是一个安全资讯聚合工具，用于自动收集、整理和推�
 - 📤 **多渠道推送**：支持飞书、企业微信、钉钉、Telegram、邮件等（见 `config.json` → `bot`）
 - ⏰ **定时任务**：支持定时自动执行，无需人工干预
 - 🛡️ **安全保护**：更新RSS时验证内容有效性，防止覆盖本地有效数据
+- 🔌 **REST API / MCP**：查询日报、搜索资讯与 CVE，可供脚本或 Cursor / Claude 调用（见 [API调用说明.md](API调用说明.md)）
 
 
 **归档首页**（日期归档 / 全站标题搜索）：
@@ -66,6 +67,11 @@ SECDaily 是一个安全资讯聚合工具，用于自动收集、整理和推�
 - `scripts/build_archive_site.py`: 本地/CI 构建归档站与搜索索引
 - `oneapi.py`: AI总结功能
 - `bot.py`: 推送机器人实现
+- `secdaily_data.py`: 归档查询层（API / MCP 共用）
+- `api_server.py`: REST API
+- `mcp_server.py`: MCP Server（stdio）
+- `connect_panel.html`: 归档页「一键接入」面板（API 接口表 + 调用示例）
+- `API调用说明.md` / `mcp.example.json`: 接口文档与 MCP 配置模板
 - `rss/`: RSS源文件目录
 
 ## 安装依赖
@@ -108,6 +114,18 @@ python convert_today.py
 
 生成当日 HTML，并更新 `archive/index.html`、`search-index.json`（全站搜索索引）等站点文件。
 
+### REST API 与 MCP
+
+```bash
+# REST API：http://127.0.0.1:8765/api/v1
+python api_server.py
+
+# 健康检查
+curl http://127.0.0.1:8765/api/v1/health
+```
+
+MCP 供 Cursor / Claude Desktop 使用，配置模板见 `mcp.example.json`。完整端点、参数与错误码见 **[API调用说明.md](API调用说明.md)**。
+
 ### 归档站点与搜索
 
 | 能力 | 位置 | 说明 |
@@ -117,7 +135,7 @@ python convert_today.py
 | **从日报跳转搜索** | 各日 HTML 顶栏搜索框 | 提交后跳转到归档首页并带关键词 |
 | **单日筛选** | 各日 HTML 工具栏 | 仅过滤当前页文章标题 / CVE，无需索引文件 |
 | **词云与 CVE 统计** | 各日 HTML 页面内 | 由 `convert_today.py` 从当日内容自动统计 |
-| **单条 AI 分析** | 日报列表 / 标题搜索结果 | 每条右侧 **ChatGPT → Gemini → DeepSeek**，复制分析提示词后跳转 |
+| **一键接入 API / MCP** | 归档首页顶栏与 `#connect` 面板 | 复制克隆命令、Cursor / Claude 配置、REST 调用；日报页导航可跳转 |
 
 #### 单条 AI 分析（ChatGPT / Gemini / DeepSeek）
 
@@ -259,6 +277,7 @@ result = analyze_security_report_fenlei(content, use_keyword_analysis=True)  # �
 6. **关键词分析 API**（可选）：8 类安全需求匹配，AI 失败时降级为关键词
 7. **多渠道推送**：飞书、企业微信、钉钉、Telegram、邮件等
 8. **推送精简**：移除 QQ / go-cqhttp 相关依赖与配置
+9. **REST API / MCP**：本地查询日报、搜索资讯与 CVE，详见 [API调用说明.md](API调用说明.md)
 
 ## 日志记录
 

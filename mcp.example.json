@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "secdaily": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": "<SECDaily仓库根目录>"
+    }
+  }
+}

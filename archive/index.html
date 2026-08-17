@@ -823,6 +823,7 @@
                     <h1>SECDaily</h1>
                     <p>每日安全资讯聚合与 AI 智能总结</p>
                     <div class="header-links">
+                        <a href="#connect">一键接入</a>
                         <a class="is-external" href="https://github.com/shellsec/SECDaily" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
                     </div>
                 </div>
@@ -831,6 +832,389 @@
                 
             </div>
         </div>
+
+        <style id="connect-panel-style">
+.connect-section {
+    background: var(--bg-card, #fff);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: var(--radius-md, 8px);
+    padding: 14px 16px 16px;
+    margin-bottom: var(--gap-section, 14px);
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(15, 23, 42, 0.08));
+    scroll-margin-top: 16px;
+}
+.connect-lead { margin: 4px 0 10px; font-size: 0.8rem; color: var(--text-secondary, #475569); }
+.connect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.connect-card {
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: var(--bg-muted, #f1f5f9);
+}
+.connect-card h3 {
+    font-size: 0.82rem;
+    margin: 0 0 6px;
+    color: var(--text-primary, #0f172a);
+}
+.connect-card p, .connect-card li {
+    font-size: 0.78rem;
+    color: var(--text-secondary, #475569);
+    line-height: 1.45;
+}
+.connect-card ul { margin: 6px 0 0; padding-left: 18px; }
+.connect-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 8px 0 6px;
+}
+.connect-toolbar span { font-size: 0.75rem; color: var(--text-muted, #94a3b8); }
+.copy-btn {
+    border: 1px solid rgba(14, 165, 233, 0.35);
+    background: #fff;
+    color: var(--primary-dark, #0284c7);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.copy-btn:hover { background: rgba(14, 165, 233, 0.08); }
+.copy-btn.is-copied { color: #047857; border-color: #10b981; }
+.connect-code {
+    margin: 0;
+    padding: 10px 12px;
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.74rem;
+    line-height: 1.45;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.connect-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.connect-tabs button {
+    border: 1px solid var(--border, #e2e8f0);
+    background: #fff;
+    color: var(--text-secondary, #475569);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.connect-tabs button.is-active {
+    background: linear-gradient(135deg, var(--primary, #0ea5e9), var(--secondary, #06b6d4));
+    color: #fff;
+    border-color: transparent;
+}
+.api-table-wrap { overflow-x: auto; margin: 8px 0 12px; }
+.api-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+}
+.api-table th, .api-table td {
+    border: 1px solid var(--border, #e2e8f0);
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.api-table th { background: #f8fafc; color: var(--text-muted, #64748b); font-weight: 600; }
+.api-table code { font-size: 0.75rem; }
+.api-table .method {
+    font-weight: 700;
+    color: #047857;
+    font-size: 0.72rem;
+}
+.api-example { color: var(--text-muted, #64748b); font-size: 0.72rem; word-break: break-all; }
+.connect-more { margin: 10px 0 0; font-size: 0.78rem; }
+.connect-more a { color: var(--primary-dark, #0284c7); font-weight: 600; text-decoration: none; }
+.connect-more a:hover { text-decoration: underline; }
+@media (max-width: 800px) {
+    .connect-grid { grid-template-columns: 1fr; }
+}
+</style>
+<section class="connect-section" id="connect" aria-labelledby="connectTitle">
+    <div class="section-head">
+        <h2 id="connectTitle">一键接入 API / MCP</h2>
+    </div>
+    <p class="connect-lead">查询日报、搜索资讯和 CVE。MCP 给 Cursor / Claude 用，REST API 给脚本和平台用。完整文档：<a href="https://github.com/shellsec/SECDaily/blob/main/API调用说明.md" target="_blank" rel="noopener noreferrer">API调用说明.md</a></p>
+
+    <div class="connect-grid">
+        <article class="connect-card" id="mcp">
+            <h3>MCP 一键接入</h3>
+            <p>克隆仓库后用 Cursor 打开该目录（已含 <code>.cursor/mcp.json</code>），在 Settings → MCP 启用 <code>secdaily</code>。</p>
+            <div class="connect-toolbar">
+                <span>Cursor / Claude Desktop 配置</span>
+                <button type="button" class="copy-btn" data-copy-target="connectMcp">一键复制</button>
+            </div>
+            <pre class="connect-code" id="connectMcp">{
+  "mcpServers": {
+    "secdaily": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": "替换为 SECDaily 仓库根目录"
+    }
+  }
+}</pre>
+            <ul>
+                <li><code>secdaily_search</code> 关键词搜索</li>
+                <li><code>secdaily_get_digest</code> 某日日报</li>
+                <li><code>secdaily_search_cves</code> 查 CVE</li>
+                <li><code>secdaily_get_summary</code> AI 总结</li>
+            </ul>
+        </article>
+        <article class="connect-card" id="api">
+            <h3>REST API 一键接入</h3>
+            <p>Base URL：<code>http://127.0.0.1:8765/api/v1</code>。默认只监听本机。</p>
+            <div class="connect-toolbar">
+                <span>启动服务</span>
+                <button type="button" class="copy-btn" data-copy-target="connectApiStart">一键复制</button>
+            </div>
+            <pre class="connect-code" id="connectApiStart">git clone https://github.com/shellsec/SECDaily.git
+cd SECDaily
+python api_server.py</pre>
+            <ul>
+                <li>OpenAPI：<code>/api/v1/openapi.json</code></li>
+                <li>可选请求头：<code>X-API-Key</code></li>
+                <li>分页：<code>page</code> / <code>pageSize</code>（最大 100）</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="section-head"><h2>API 接口</h2></div>
+    <div class="api-table-wrap">
+        <table class="api-table">
+            <thead>
+                <tr>
+                    <th>方法</th>
+                    <th>路径</th>
+                    <th>说明</th>
+                    <th>调用示例</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/health</code></td>
+                    <td>健康检查、最新日期</td>
+                    <td class="api-example">curl http://127.0.0.1:8765/api/v1/health</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl http://127.0.0.1:8765/api/v1/health">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/dates</code></td>
+                    <td>可用日报日期，可加 year、limit</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/dates?year=2026&amp;limit=7"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/dates?year=2026&amp;limit=7&quot;">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/digest</code></td>
+                    <td>最新一天日报</td>
+                    <td class="api-example">curl http://127.0.0.1:8765/api/v1/digest</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl http://127.0.0.1:8765/api/v1/digest">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/digest/{date}</code></td>
+                    <td>指定日期日报，可 cveOnly、source</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10&quot;">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/articles</code></td>
+                    <td>关键词搜索标题 / 来源 / CVE</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/articles?q=MCP&amp;pageSize=5"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/articles?q=MCP&amp;pageSize=5&quot;">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/cves</code></td>
+                    <td>按 CVE 编号检索</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/cves?q=2026-4893"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/cves?q=2026-4893&quot;">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/sources</code></td>
+                    <td>来源列表，可加 date</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/sources?date=2026-05-28"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/sources?date=2026-05-28&quot;">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/summary/{date}</code></td>
+                    <td>当日 AI 总结（若已生成）</td>
+                    <td class="api-example">curl http://127.0.0.1:8765/api/v1/summary/2025-12-03</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl http://127.0.0.1:8765/api/v1/summary/2025-12-03">复制</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">POST</span></td>
+                    <td><code>/api/v1/analyze</code></td>
+                    <td>需求文本 8 类安全评估</td>
+                    <td class="api-example">见下方 Python / curl 示例</td>
+                    <td><button type="button" class="copy-btn" data-copy-target="connectExampleCurl">复制 curl</button></td>
+                </tr>
+                <tr>
+                    <td><span class="method">GET</span></td>
+                    <td><code>/api/v1/openapi.json</code></td>
+                    <td>OpenAPI 描述</td>
+                    <td class="api-example">curl http://127.0.0.1:8765/api/v1/openapi.json</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl http://127.0.0.1:8765/api/v1/openapi.json">复制</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-head"><h2>调用示例</h2></div>
+    <div class="connect-tabs" role="tablist" aria-label="调用示例">
+        <button type="button" class="is-active" data-connect-tab="curl" role="tab">curl</button>
+        <button type="button" data-connect-tab="pwsh" role="tab">PowerShell</button>
+        <button type="button" data-connect-tab="python" role="tab">Python</button>
+        <button type="button" data-connect-tab="mcp-chat" role="tab">MCP 对话</button>
+    </div>
+    <div data-connect-pane="curl">
+        <div class="connect-toolbar">
+            <span>启动后在终端执行</span>
+            <button type="button" class="copy-btn" data-copy-target="connectExampleCurl">一键复制</button>
+        </div>
+        <pre class="connect-code" id="connectExampleCurl">python api_server.py
+curl http://127.0.0.1:8765/api/v1/health
+curl "http://127.0.0.1:8765/api/v1/dates?limit=7"
+curl http://127.0.0.1:8765/api/v1/digest
+curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10"
+curl "http://127.0.0.1:8765/api/v1/articles?q=MCP&amp;from=2026-04-01&amp;pageSize=5"
+curl "http://127.0.0.1:8765/api/v1/cves?q=2026-4893"
+curl "http://127.0.0.1:8765/api/v1/sources?date=2026-05-28"
+curl -X POST http://127.0.0.1:8765/api/v1/analyze -H "Content-Type: application/json" -d "{\"content\":\"需求：用户注册登录并绑定银行卡支付\",\"useKeywordAnalysis\":true}"</pre>
+    </div>
+    <div data-connect-pane="pwsh" hidden>
+        <div class="connect-toolbar">
+            <span>Windows PowerShell</span>
+            <button type="button" class="copy-btn" data-copy-target="connectExamplePwsh">一键复制</button>
+        </div>
+        <pre class="connect-code" id="connectExamplePwsh">python api_server.py
+Invoke-RestMethod http://127.0.0.1:8765/api/v1/health
+Invoke-RestMethod "http://127.0.0.1:8765/api/v1/articles?q=勒索&amp;pageSize=5"
+(Invoke-RestMethod "http://127.0.0.1:8765/api/v1/cves?q=2026-4893").data
+Invoke-RestMethod -Method Post http://127.0.0.1:8765/api/v1/analyze -ContentType "application/json" -Body '{"content":"需求：用户注册登录并绑定银行卡支付","useKeywordAnalysis":true}'</pre>
+    </div>
+    <div data-connect-pane="python" hidden>
+        <div class="connect-toolbar">
+            <span>Python requests</span>
+            <button type="button" class="copy-btn" data-copy-target="connectExamplePython">一键复制</button>
+        </div>
+        <pre class="connect-code" id="connectExamplePython">import requests
+
+base = "http://127.0.0.1:8765/api/v1"
+print(requests.get(f"{base}/health").json()["latestDate"])
+digest = requests.get(f"{base}/digest", params={"pageSize": 5}).json()
+print(digest["date"], digest["stats"])
+news = requests.get(f"{base}/articles", params={"q": "MCP", "pageSize": 5}).json()
+for item in news["data"]:
+    print(item["date"], item["title"], item["url"])
+cves = requests.get(f"{base}/cves", params={"q": "2026-4893"}).json()
+print(cves["data"])</pre>
+    </div>
+    <div data-connect-pane="mcp-chat" hidden>
+        <div class="connect-toolbar">
+            <span>在 Cursor / Claude 里直接说</span>
+            <button type="button" class="copy-btn" data-copy-target="connectExampleMcp">一键复制</button>
+        </div>
+        <pre class="connect-code" id="connectExampleMcp">用 secdaily 查最近关于 MCP 的资讯
+用 secdaily_get_digest 看今天的安全日报，只要含 CVE 的
+用 secdaily_search_cves 查 CVE-2026-4893
+用 secdaily_list_sources 列出 2026-05-28 的资讯来源
+用 secdaily_get_summary 读取最近一份 AI 总结</pre>
+    </div>
+    <p class="connect-more">错误码、分页字段与 MCP 工具参数见 <a href="https://github.com/shellsec/SECDaily/blob/main/API调用说明.md" target="_blank" rel="noopener noreferrer">API调用说明.md</a> · 仓库 <a href="https://github.com/shellsec/SECDaily" target="_blank" rel="noopener noreferrer">https://github.com/shellsec/SECDaily</a></p>
+</section>
+<script>
+(function initConnectGuide() {
+    const root = document.getElementById('connect');
+    if (!root || root.dataset.bound === '1') return;
+    root.dataset.bound = '1';
+    const tabs = root.querySelectorAll('[data-connect-tab]');
+    const panes = root.querySelectorAll('[data-connect-pane]');
+    const copyTextSync = (text) => {
+        try {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly', '');
+            ta.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            const ok = document.execCommand('copy');
+            document.body.removeChild(ta);
+            return ok;
+        } catch (e) {
+            return false;
+        }
+    };
+    const copyText = async (text) => {
+        if (copyTextSync(text)) return true;
+        if (navigator.clipboard && window.isSecureContext) {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+        return false;
+    };
+    const flash = (btn, ok) => {
+        const old = btn.textContent;
+        btn.textContent = ok ? '已复制' : '复制失败';
+        btn.classList.toggle('is-copied', ok);
+        btn.disabled = true;
+        setTimeout(() => {
+            btn.textContent = old;
+            btn.classList.remove('is-copied');
+            btn.disabled = false;
+        }, ok ? 2000 : 2800);
+    };
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const id = tab.dataset.connectTab;
+            tabs.forEach((item) => {
+                const on = item === tab;
+                item.classList.toggle('is-active', on);
+                item.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            panes.forEach((pane) => {
+                pane.hidden = pane.dataset.connectPane !== id;
+            });
+        });
+    });
+    root.querySelectorAll('.copy-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+            let text = btn.getAttribute('data-copy-text') || '';
+            if (!text && btn.dataset.copyTarget) {
+                const el = document.getElementById(btn.dataset.copyTarget);
+                text = (el && el.textContent || '').replace(/\n$/, '');
+            }
+            text = text.replace(/&amp;/g, '&');
+            const ok = await copyText(text);
+            flash(btn, ok);
+            if (!ok) window.prompt('请手动复制：', text);
+        });
+    });
+})();
+</script>
         
         
         <section class="recent-section" aria-label="最近七天">
@@ -936,7 +1320,7 @@
             </div>
             <div class="stat-item">
                 <span class="stat-icon">🔄</span>
-                <div class="stat-value" style="font-size: 1.1rem;">2026-05-28</div>
+                <div class="stat-value" style="font-size: 1.1rem;">2026-08-17</div>
                 <div class="stat-label">更新时间</div>
             </div>
             </div>
@@ -2118,13 +2502,17 @@
         <div class="footer">
             <p>&copy; 2026 SECDaily</p>
             <div class="footer-links">
+                <a href="#connect">一键接入</a>
+                <span>|</span>
                 <a href="https://github.com/shellsec/SECDaily" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+                <span>|</span>
+                <a href="https://github.com/shellsec/SECDaily/blob/main/API调用说明.md" target="_blank" rel="noopener noreferrer">API / MCP 说明</a>
                 <span>|</span>
                 <a href="sitemap.xml" target="_blank">站点地图</a>
                 <span>|</span>
                 <a href="robots.txt" target="_blank">Robots.txt</a>
             </div>
-            <div class="update-time">最后更新: 2026-05-28 12:29:23</div>
+            <div class="update-time">最后更新: 2026-08-17 14:52:03</div>
         </div>
     </div>
     

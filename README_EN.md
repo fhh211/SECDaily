@@ -37,6 +37,7 @@ SECDaily aggregates security-related RSS feeds, produces Markdown/HTML daily dig
 - 📤 **Multi-channel push**: Feishu, WeCom, DingTalk, Telegram, email, etc. (`config.json` → `bot`)
 - ⏰ **Scheduling**: Run on a cron-like daily schedule
 - 🛡️ **Safe RSS updates**: Validates remote content before replacing local OPML files
+- 🔌 **REST API / MCP**: Query digests, search articles and CVEs from scripts or Cursor / Claude (see [API调用说明.md](API调用说明.md))
 
 **Archive home** (date browse / title search):
 
@@ -62,6 +63,11 @@ SECDaily aggregates security-related RSS feeds, produces Markdown/HTML daily dig
 - `scripts/build_archive_site.py`: Local/CI builder for the archive site and search index
 - `oneapi.py`: AI summary helpers
 - `bot.py`: Push bots
+- `secdaily_data.py`: Archive query layer shared by API and MCP
+- `api_server.py`: REST API
+- `mcp_server.py`: MCP server (stdio)
+- `connect_panel.html`: One-click API / MCP panel on archive pages
+- `API调用说明.md` / `mcp.example.json`: API docs and MCP config template
 - `rss/`: RSS OPML sources
 
 ## Install
@@ -105,6 +111,17 @@ python convert_today.py
 
 Builds today’s HTML and updates `archive/index.html`, `search-index.json` (site-wide search), etc.
 
+### REST API and MCP
+
+```bash
+# REST API: http://127.0.0.1:8765/api/v1
+python api_server.py
+
+curl http://127.0.0.1:8765/api/v1/health
+```
+
+MCP is for Cursor / Claude Desktop; see `mcp.example.json`. Endpoints, parameters, and error codes: **[API调用说明.md](API调用说明.md)**.
+
 ### Archive site & search
 
 | Capability | Where | Notes |
@@ -115,6 +132,7 @@ Builds today’s HTML and updates `archive/index.html`, `search-index.json` (sit
 | **In-page filter** | Daily HTML toolbar | Filters current page titles / CVE only; no index file |
 | **Word cloud & CVE stats** | Daily HTML | Computed by `convert_today.py` from that day’s content |
 | **Per-item AI analysis** | Daily list / title search results | **ChatGPT → Gemini → DeepSeek**; copies prompt then opens the AI |
+| **One-click API / MCP setup** | Archive home `#connect` panel | Copy clone command, Cursor / Claude config, and REST examples |
 
 #### Per-item AI analysis (ChatGPT / Gemini / DeepSeek)
 
@@ -254,6 +272,7 @@ Multiple push channels are supported; see the `bot` and `AISummary` sections in 
 6. **Keyword analysis API** (optional): 8-category matching with keyword fallback
 7. **Multi-channel push**: Feishu, WeCom, DingTalk, Telegram, email, etc.
 8. **Push cleanup**: Removed QQ / go-cqhttp dependencies and config
+9. **REST API / MCP**: Query local digests, articles, and CVEs; see [API调用说明.md](API调用说明.md)
 
 ## Logs
 

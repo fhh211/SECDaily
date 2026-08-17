@@ -823,6 +823,7 @@
                     <h1>{{ site_name }}</h1>
                     <p>{{ site_tagline }}</p>
                     <div class="header-links">
+                        <a href="#connect">一键接入</a>
                         <a class="is-external" href="{{ github_url }}" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
                     </div>
                 </div>
@@ -831,6 +832,8 @@
                 {% endif %}
             </div>
         </div>
+
+        {{ connect_panel }}
         
         {% if recent_days and recent_days|length > 0 %}
         <section class="recent-section" aria-label="最近七天">
@@ -916,7 +919,11 @@
         <div class="footer">
             <p>&copy; {{ year }} {{ site_name }}</p>
             <div class="footer-links">
+                <a href="#connect">一键接入</a>
+                <span>|</span>
                 <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+                <span>|</span>
+                <a href="{{ github_url }}/blob/main/API调用说明.md" target="_blank" rel="noopener noreferrer">API / MCP 说明</a>
                 <span>|</span>
                 <a href="sitemap.xml" target="_blank">站点地图</a>
                 <span>|</span>
