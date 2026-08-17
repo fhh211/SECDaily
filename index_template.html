@@ -833,8 +833,6 @@
             </div>
         </div>
 
-        {{ connect_panel }}
-        
         {% if recent_days and recent_days|length > 0 %}
         <section class="recent-section" aria-label="最近七天">
             <div class="section-head">
@@ -915,6 +913,8 @@
             <div id="searchEmpty" class="search-empty">未找到匹配的日报，请换个关键词试试</div>
             <div id="archiveContent">{{ content }}</div>
         </div>
+
+        {{ connect_panel }}
         
         <div class="footer">
             <p>&copy; {{ year }} {{ site_name }}</p>
