@@ -93,13 +93,13 @@ pip install -r requirements.txt
 ### 启动定时任务
 
 ```bash
-# 默认每天10:00执行
+# 默认每天 10:30 执行；启动时会打印下次执行时间
 python yarb.py
 
 # 立即执行一次（测试用）
 python yarb.py --force
 
-# 自定义执行时间
+# 自定义每天执行时间
 python yarb.py --cron "11:00"
 
 # 强制更新RSS源

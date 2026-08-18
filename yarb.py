@@ -4,7 +4,6 @@ import os
 import json
 import time
 import asyncio
-import schedule
 import pyfiglet
 import argparse
 import datetime
@@ -682,7 +681,7 @@ async def job(args):
 def argument():
     parser = argparse.ArgumentParser()
     parser.add_argument('--update', help='Update RSS config file', action='store_true', required=False)
-    parser.add_argument('--cron', help='Execute scheduled tasks every day (eg:"11:00")', type=str, required=False)
+    parser.add_argument('--cron', help='每天定时执行，格式 HH:MM，默认 10:30', type=str, required=False)
     parser.add_argument('--config', help='Use specified config file', type=str, required=False)
     parser.add_argument('--test', help='Test bot', action='store_true', required=False)
     parser.add_argument('--force', help='Force execute task', action='store_true', required=False)
@@ -690,101 +689,136 @@ def argument():
 
 async def main():
     args = argument()
-    if args.cron:
-        schedule.every().day.at(args.cron).do(job, args)
-        while True:
-            schedule.run_pending()
-            await asyncio.sleep(1)
-    elif args.force:
-        await job(args)
-    else:
-        await job(args)
-        # 注意：HTML报告生成已在 job() 函数内部完成
+    await job(args)
 
 
 # 修改主函数，增加错误处理和重试机制
 if __name__ == "__main__":
     import time
-    import datetime
-    import asyncio
-    import logging
     import sys
-    
-    # def is_weekday():
-    #     # 判断是否是工作日（周一到周五）
-    #     return datetime.datetime.today().weekday() < 5  # 0-4是周一到周五
-    
-    def should_run_now():
-        now = datetime.datetime.now()
-        # 检查当前时间是否是10点整（精确到分钟）- 每日执行
-        return now.hour == 10 and now.minute == 30
-        # return is_weekday() and now.hour == 10 and now.minute == 0
-    
-    def should_run_force():
-        # 检查是否有强制运行参数
-        return len(sys.argv) > 1 and sys.argv[1] == '--force'
-    
-    print(f"SECDaily 安全资讯收集器已启动，当前时间: {datetime.datetime.now()}")
-    logger.info("SECDaily 安全资讯收集器已启动")
-    
+
+    DEFAULT_SCHEDULE = "10:30"
+
+    def parse_hhmm(value: str) -> tuple[int, int]:
+        parts = (value or "").strip().split(":")
+        if len(parts) != 2:
+            raise ValueError(f"定时时间格式无效: {value}（应为 HH:MM）")
+        hour, minute = int(parts[0]), int(parts[1])
+        if not (0 <= hour <= 23 and 0 <= minute <= 59):
+            raise ValueError(f"定时时间超出范围: {value}")
+        return hour, minute
+
+    def format_remaining(delta: datetime.timedelta) -> str:
+        total = max(0, int(delta.total_seconds()))
+        hours, rem = divmod(total, 3600)
+        minutes, seconds = divmod(rem, 60)
+        if hours:
+            return f"{hours} 小时 {minutes} 分钟"
+        if minutes:
+            return f"{minutes} 分钟"
+        return f"{seconds} 秒"
+
+    def next_run_at(now: datetime.datetime, hour: int, minute: int) -> datetime.datetime:
+        target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        if now >= target:
+            target += datetime.timedelta(days=1)
+        return target
+
+    args = argument()
+    try:
+        schedule_hour, schedule_minute = parse_hhmm(args.cron or DEFAULT_SCHEDULE)
+    except ValueError as exc:
+        print(f"[!] {exc}")
+        raise SystemExit(1)
+    schedule_label = f"{schedule_hour:02d}:{schedule_minute:02d}"
+
+    def should_run_now(now: datetime.datetime) -> bool:
+        return now.hour == schedule_hour and now.minute == schedule_minute
+
+    now = datetime.datetime.now()
+    nxt = next_run_at(now, schedule_hour, schedule_minute)
+    print("=" * 56)
+    print("SECDaily 安全资讯收集器已启动")
+    print(f"当前时间: {now:%Y-%m-%d %H:%M:%S}")
+    if args.force:
+        print("运行模式: 立即执行一次（--force），不进入定时循环")
+    else:
+        print(f"定时任务: 每天 {schedule_label} 执行")
+        print(f"下次执行: {nxt:%Y-%m-%d %H:%M:%S}（还有 {format_remaining(nxt - now)}）")
+        print("立即执行请用: python yarb.py --force")
+    print("=" * 56)
+    logger.info(
+        "SECDaily 已启动，定时 %s，下次执行 %s",
+        schedule_label,
+        nxt.strftime("%Y-%m-%d %H:%M:%S"),
+    )
+
+    if args.force:
+        try:
+            asyncio.run(main())
+            print(f"强制执行完成，当前时间: {datetime.datetime.now():%Y-%m-%d %H:%M:%S}")
+            logger.info("强制执行完成")
+        except Exception as e:
+            print(f"强制执行失败: {e}")
+            logger.error("强制执行失败: %s", e, exc_info=True)
+            raise SystemExit(1)
+        raise SystemExit(0)
+
+    last_run_date = None
+    last_status_slot = None
     while True:
         try:
             current_time = datetime.datetime.now()
-            
-            # 检查是否应该运行
-            if should_run_force() or should_run_now():
-                message = f"当前时间: {current_time}, "
-                message += "强制执行任务..." if should_run_force() else "是每日10:00，执行任务..."
+            today = current_time.strftime("%Y-%m-%d")
+
+            if should_run_now(current_time) and last_run_date != today:
+                last_run_date = today
+                message = f"已到定时 {schedule_label}，开始执行任务... 当前时间: {current_time:%Y-%m-%d %H:%M:%S}"
                 print(message)
                 logger.info(message)
-                
-                # 最多尝试3次
+
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
                         asyncio.run(main())
-                        # main()
-                        print(f"任务执行成功，当前时间: {datetime.datetime.now()}")
+                        print(f"任务执行成功，当前时间: {datetime.datetime.now():%Y-%m-%d %H:%M:%S}")
                         logger.info("任务执行成功")
                         break
                     except Exception as e:
-                        print(f"任务执行失败 (尝试 {attempt+1}/{max_retries}): {str(e)}")
-                        logger.error(f"任务执行失败 (尝试 {attempt+1}/{max_retries}): {str(e)}", exc_info=True)
+                        print(f"任务执行失败 (尝试 {attempt+1}/{max_retries}): {e}")
+                        logger.error(f"任务执行失败 (尝试 {attempt+1}/{max_retries}): {e}", exc_info=True)
                         if attempt < max_retries - 1:
-                            wait_time = 60  # 等待1分钟后重试
+                            wait_time = 60
                             print(f"等待 {wait_time} 秒后重试...")
                             time.sleep(wait_time)
                         else:
                             print("达到最大重试次数，放弃执行")
                             logger.error("达到最大重试次数，放弃执行")
-                
-                # 如果是强制执行，执行完就退出
-                if should_run_force():
-                    print("强制执行完成，退出程序")
-                    logger.info("强制执行完成，退出程序")
-                    sys.exit(0)
+
+                nxt = next_run_at(datetime.datetime.now(), schedule_hour, schedule_minute)
+                print(f"下次执行: {nxt:%Y-%m-%d %H:%M:%S}（还有 {format_remaining(nxt - datetime.datetime.now())}）")
             else:
-                # 仅在整分钟时打印状态（避免日志过多）
-                if current_time.second == 0:
-                    if current_time.minute == 0:  # 整点报告
-                        status = f"当前时间: {current_time}, "
-                        if current_time.hour < 10:
-                            status += f"等待今日执行时间 (还有 {10-current_time.hour} 小时)"
-                        else:
-                            status += "今日任务已执行或未到执行时间"
-                        print(status)
-                        logger.info(status)
-            
-            # 每30秒检查一次（平衡精确性和系统负载）
+                status_slot = (current_time.hour, current_time.minute // 30)
+                if status_slot != last_status_slot:
+                    last_status_slot = status_slot
+                    nxt = next_run_at(current_time, schedule_hour, schedule_minute)
+                    status = (
+                        f"当前时间: {current_time:%Y-%m-%d %H:%M:%S}，"
+                        f"定时每天 {schedule_label}，"
+                        f"下次 {nxt:%Y-%m-%d %H:%M:%S}（还有 {format_remaining(nxt - current_time)}）"
+                    )
+                    print(status)
+                    logger.info(status)
+
             time.sleep(30)
         except KeyboardInterrupt:
             print("程序被用户中断，正在退出...")
             logger.info("程序被用户中断，正在退出...")
             sys.exit(0)
         except Exception as e:
-            print(f"主循环发生错误: {str(e)}")
-            logger.error(f"主循环发生错误: {str(e)}", exc_info=True)
-            time.sleep(60)  # 发生错误后等待1分钟再继续
+            print(f"主循环发生错误: {e}")
+            logger.error(f"主循环发生错误: {e}", exc_info=True)
+            time.sleep(60)
 
 
 # if __name__ == '__main__':

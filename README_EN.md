@@ -90,7 +90,7 @@ Main dependencies:
 ### Scheduled run
 
 ```bash
-# Default: run every day at 10:00
+# Default: every day at 10:30; startup prints the next run time
 python yarb.py
 
 # Run once immediately (for testing)
