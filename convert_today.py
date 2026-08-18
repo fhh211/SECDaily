@@ -558,7 +558,6 @@ def convert_md_to_html(md_file, html_file):
                 site_name=SITE_NAME,
                 site_tagline=SITE_TAGLINE,
                 github_url=SITE_GITHUB_URL,
-                connect_panel=render_connect_panel(),
             )
             logger.info("模板渲染成功")
         except Exception as e:

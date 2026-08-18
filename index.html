@@ -420,6 +420,8 @@
         }
 
         .title-search-panel.is-visible { display: block; }
+        .container.is-title-search .archive-panel,
+        .container.is-title-search .stats-bar { display: none; }
 
         .title-search-head {
             display: flex;
@@ -546,7 +548,8 @@
         }
 
         .title-search-empty,
-        .title-search-loading {
+        .title-search-loading,
+        .title-search-hint {
             text-align: center;
             padding: 24px 12px;
             color: var(--text-muted);
@@ -911,7 +914,8 @@
                 <h2>标题搜索结果</h2>
                 <span class="title-search-meta" id="titleSearchMeta"></span>
             </div>
-            <div class="title-search-loading" id="titleSearchLoading">正在加载搜索索引...</div>
+            <div class="title-search-hint" id="titleSearchHint">输入关键词，搜索文章标题、来源或 CVE</div>
+            <div class="title-search-loading" id="titleSearchLoading" hidden>正在加载搜索索引...</div>
             <div class="title-search-empty" id="titleSearchEmpty" hidden>未找到匹配文章，请换个关键词试试</div>
             <div class="title-search-list" id="titleSearchList"></div>
         </section>
@@ -1390,7 +1394,7 @@ print(cves["data"])</pre>
                 <span>|</span>
                 <a href="archive/robots.txt" target="_blank">Robots.txt</a>
             </div>
-            <div class="update-time">最后更新: 2026-08-18 10:18:01</div>
+            <div class="update-time">最后更新: 2026-08-18 10:21:09</div>
         </div>
     </div>
     
@@ -1410,17 +1414,20 @@ print(cves["data"])</pre>
             const titleSearchList = document.getElementById('titleSearchList');
             const titleSearchMeta = document.getElementById('titleSearchMeta');
             const titleSearchEmpty = document.getElementById('titleSearchEmpty');
+            const titleSearchHint = document.getElementById('titleSearchHint');
             const titleSearchLoading = document.getElementById('titleSearchLoading');
             const yearJump = document.getElementById('yearJump');
             const modeTitleBtn = document.getElementById('modeTitle');
             const modeDateBtn = document.getElementById('modeDate');
+            const archivePanel = document.querySelector('.archive-panel');
+            const pageRoot = document.querySelector('.container');
             if (!archiveContent) return;
 
             const cards = archiveContent.querySelectorAll('.article-card');
             let searchMode = 'date';
             let searchIndex = [];
             let indexLoaded = false;
-            let indexLoading = false;
+            let indexPromise = null;
             const MAX_TITLE_RESULTS = 80;
 
             const updateCount = (visible) => {
@@ -1432,6 +1439,7 @@ print(cves["data"])</pre>
 
             const setSearchMode = (mode) => {
                 searchMode = mode;
+                if (pageRoot) pageRoot.classList.toggle('is-title-search', mode === 'title');
                 if (modeTitleBtn) modeTitleBtn.classList.toggle('is-active', mode === 'title');
                 if (modeDateBtn) modeDateBtn.classList.toggle('is-active', mode === 'date');
                 if (searchInput) {
@@ -1440,32 +1448,42 @@ print(cves["data"])</pre>
                         : '搜索日期，如 2026-03';
                 }
                 if (yearJump) yearJump.style.display = mode === 'date' ? '' : 'none';
-                const hasQuery = !!(searchInput?.value || '').trim();
-                if (titleSearchPanel) {
-                    titleSearchPanel.classList.toggle('is-visible', mode === 'title' && hasQuery);
-                }
+                if (archivePanel) archivePanel.style.display = mode === 'title' ? 'none' : '';
+                if (titleSearchPanel) titleSearchPanel.classList.toggle('is-visible', mode === 'title');
                 if (searchEmpty) searchEmpty.style.display = 'none';
+                if (mode === 'title' && searchInput) searchInput.focus();
                 runSearch();
             };
 
             const loadSearchIndex = async () => {
-                if (indexLoaded || indexLoading) return;
-                indexLoading = true;
-                try {
-                    const ARCHIVE_PREFIX = 'archive/';
-                    const response = await fetch(ARCHIVE_PREFIX + 'search-index.json', { cache: 'no-cache' });
-                    if (!response.ok) throw new Error('索引加载失败');
-                    const data = await response.json();
-                    searchIndex = Array.isArray(data) ? data : (data.articles || []);
-                    indexLoaded = true;
-                } catch (error) {
-                    if (titleSearchLoading) {
-                        titleSearchLoading.textContent = '搜索索引加载失败，请稍后重试';
-                    }
-                } finally {
-                    indexLoading = false;
-                    if (titleSearchLoading) titleSearchLoading.hidden = true;
+                if (indexLoaded) return true;
+                if (indexPromise) return indexPromise;
+                if (titleSearchLoading) {
+                    titleSearchLoading.hidden = false;
+                    titleSearchLoading.textContent = '正在加载搜索索引...';
                 }
+                if (titleSearchHint) titleSearchHint.hidden = true;
+                indexPromise = (async () => {
+                    try {
+                        const ARCHIVE_PREFIX = 'archive/';
+                        const response = await fetch(ARCHIVE_PREFIX + 'search-index.json', { cache: 'no-cache' });
+                        if (!response.ok) throw new Error('索引加载失败');
+                        const data = await response.json();
+                        searchIndex = Array.isArray(data) ? data : (data.articles || []);
+                        indexLoaded = true;
+                        if (titleSearchLoading) titleSearchLoading.hidden = true;
+                        return true;
+                    } catch (error) {
+                        indexLoaded = false;
+                        indexPromise = null;
+                        if (titleSearchLoading) {
+                            titleSearchLoading.hidden = false;
+                            titleSearchLoading.textContent = '搜索索引加载失败。请用本地 HTTP 打开页面，或稍后重试。';
+                        }
+                        return false;
+                    }
+                })();
+                return indexPromise;
             };
 
             const renderTitleResults = (query) => {
@@ -1475,11 +1493,17 @@ print(cves["data"])</pre>
                 if (!query) {
                     titleSearchMeta.textContent = '';
                     titleSearchEmpty.hidden = true;
-                    if (titleSearchPanel) titleSearchPanel.classList.remove('is-visible');
+                    if (titleSearchHint) titleSearchHint.hidden = !indexLoaded;
                     return;
                 }
 
-                if (titleSearchPanel) titleSearchPanel.classList.add('is-visible');
+                if (titleSearchHint) titleSearchHint.hidden = true;
+
+                if (!indexLoaded) {
+                    titleSearchEmpty.hidden = true;
+                    titleSearchMeta.textContent = '';
+                    return;
+                }
 
                 const q = query.toLowerCase();
                 const allMatches = searchIndex.filter((item) => {
@@ -1487,6 +1511,7 @@ print(cves["data"])</pre>
                         item.title || '',
                         item.source || '',
                         item.date || '',
+                        item.page || '',
                     ].join(' ').toLowerCase();
                     return haystack.includes(q);
                 });
@@ -1576,15 +1601,11 @@ print(cves["data"])</pre>
                     runDateSearch();
                     return;
                 }
-                const query = (searchInput?.value || '').trim();
-                if (!indexLoaded && !indexLoading) {
-                    if (titleSearchLoading) {
-                        titleSearchLoading.hidden = false;
-                        titleSearchLoading.textContent = '正在加载搜索索引...';
-                    }
-                    await loadSearchIndex();
+                renderTitleResults((searchInput?.value || '').trim());
+                await loadSearchIndex();
+                if (searchMode === 'title') {
+                    renderTitleResults((searchInput?.value || '').trim());
                 }
-                renderTitleResults(query);
             };
 
             if (modeTitleBtn) modeTitleBtn.addEventListener('click', () => setSearchMode('title'));
