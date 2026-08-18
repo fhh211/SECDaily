@@ -483,7 +483,10 @@
             color: var(--text-primary);
             line-height: 1.45;
             margin-bottom: 6px;
+            display: inline-block;
+            text-decoration: none;
         }
+        .title-search-item-title:hover { color: var(--primary-dark); }
 
         .title-search-item-meta {
             display: flex;
@@ -493,11 +496,18 @@
             color: var(--text-muted);
         }
 
-        .title-search-item-meta span {
+        .title-search-item-meta span,
+        .title-search-item-meta a {
             padding: 2px 8px;
             border-radius: 999px;
             background: rgba(14, 165, 233, 0.08);
             border: 1px solid rgba(14, 165, 233, 0.15);
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        .title-search-item-meta a:hover {
+            color: var(--primary-dark);
+            border-color: rgba(14, 165, 233, 0.45);
         }
 
         .item-ai-jump {
@@ -1394,7 +1404,7 @@ print(cves["data"])</pre>
                 <span>|</span>
                 <a href="robots.txt" target="_blank">Robots.txt</a>
             </div>
-            <div class="update-time">最后更新: 2026-08-18 10:21:09</div>
+            <div class="update-time">最后更新: 2026-08-18 10:31:34</div>
         </div>
     </div>
     
@@ -1420,11 +1430,15 @@ print(cves["data"])</pre>
             const modeTitleBtn = document.getElementById('modeTitle');
             const modeDateBtn = document.getElementById('modeDate');
             const archivePanel = document.querySelector('.archive-panel');
+            const recentSection = document.querySelector('.recent-section');
             const pageRoot = document.querySelector('.container');
             if (!archiveContent) return;
 
+            const ARCHIVE_PREFIX = '';
             const cards = archiveContent.querySelectorAll('.article-card');
             let searchMode = 'date';
+            let lastTitleQuery = '';
+            let lastDateQuery = '';
             let searchIndex = [];
             let indexLoaded = false;
             let indexPromise = null;
@@ -1438,6 +1452,11 @@ print(cves["data"])</pre>
             updateCount(cards.length);
 
             const setSearchMode = (mode) => {
+                if (searchInput) {
+                    if (searchMode === 'title') lastTitleQuery = searchInput.value;
+                    else lastDateQuery = searchInput.value;
+                    searchInput.value = mode === 'title' ? lastTitleQuery : lastDateQuery;
+                }
                 searchMode = mode;
                 if (pageRoot) pageRoot.classList.toggle('is-title-search', mode === 'title');
                 if (modeTitleBtn) modeTitleBtn.classList.toggle('is-active', mode === 'title');
@@ -1449,6 +1468,7 @@ print(cves["data"])</pre>
                 }
                 if (yearJump) yearJump.style.display = mode === 'date' ? '' : 'none';
                 if (archivePanel) archivePanel.style.display = mode === 'title' ? 'none' : '';
+                if (recentSection) recentSection.style.display = mode === 'title' ? 'none' : '';
                 if (titleSearchPanel) titleSearchPanel.classList.toggle('is-visible', mode === 'title');
                 if (searchEmpty) searchEmpty.style.display = 'none';
                 if (mode === 'title' && searchInput) searchInput.focus();
@@ -1465,7 +1485,6 @@ print(cves["data"])</pre>
                 if (titleSearchHint) titleSearchHint.hidden = true;
                 indexPromise = (async () => {
                     try {
-                        const ARCHIVE_PREFIX = '';
                         const response = await fetch(ARCHIVE_PREFIX + 'search-index.json', { cache: 'no-cache' });
                         if (!response.ok) throw new Error('索引加载失败');
                         const data = await response.json();
@@ -1555,25 +1574,43 @@ print(cves["data"])</pre>
                     const row = document.createElement('div');
                     row.className = 'title-search-row';
 
+                    const main = document.createElement('div');
+                    main.className = 'title-search-item';
+
                     const link = document.createElement('a');
-                    link.className = 'title-search-item';
-                    link.href = item.url;
+                    link.className = 'title-search-item-title';
+                    link.href = item.url || '#';
                     link.target = '_blank';
                     link.rel = 'noopener noreferrer';
-                    link.innerHTML = `
-                        <div class="title-search-item-title"></div>
-                        <div class="title-search-item-meta">
-                            <span>${item.date || ''}</span>
-                            <span>${item.source || '未分类'}</span>
-                        </div>
-                    `;
-                    link.querySelector('.title-search-item-title').textContent = title;
+                    link.textContent = title;
+
+                    const metaWrap = document.createElement('div');
+                    metaWrap.className = 'title-search-item-meta';
+                    if (item.date) {
+                        if (item.page) {
+                            const dayLink = document.createElement('a');
+                            dayLink.href = ARCHIVE_PREFIX + item.page;
+                            dayLink.textContent = item.date;
+                            dayLink.title = '打开当日日报';
+                            metaWrap.appendChild(dayLink);
+                        } else {
+                            const dateEl = document.createElement('span');
+                            dateEl.textContent = item.date;
+                            metaWrap.appendChild(dateEl);
+                        }
+                    }
+                    const sourceEl = document.createElement('span');
+                    sourceEl.textContent = item.source || '未分类';
+                    metaWrap.appendChild(sourceEl);
+
+                    main.appendChild(link);
+                    main.appendChild(metaWrap);
 
                     const jump = document.createElement('span');
                     jump.className = 'item-ai-jump';
                     appendAiButtons(jump, item);
 
-                    row.appendChild(link);
+                    row.appendChild(main);
                     row.appendChild(jump);
                     titleSearchList.appendChild(row);
                 });
@@ -1583,7 +1620,7 @@ print(cves["data"])</pre>
                 const q = (searchInput?.value || '').trim().toLowerCase();
                 let visible = 0;
                 cards.forEach((card) => {
-                    const date = (card.dataset.date || card.textContent || '').toLowerCase();
+                    const date = (card.dataset.date || '').toLowerCase();
                     const show = !q || date.includes(q);
                     card.style.display = show ? '' : 'none';
                     if (show) visible++;
@@ -1592,6 +1629,14 @@ print(cves["data"])</pre>
                     const any = [...section.querySelectorAll('.article-card')].some(c => c.style.display !== 'none');
                     section.style.display = any ? '' : 'none';
                 });
+                if (yearJump) {
+                    yearJump.querySelectorAll('a').forEach((link) => {
+                        const id = link.getAttribute('href');
+                        const section = id && document.querySelector(id);
+                        link.style.display = (!q || (section && section.style.display !== 'none')) ? '' : 'none';
+                    });
+                }
+                if (recentSection) recentSection.style.display = q ? 'none' : '';
                 if (searchEmpty) searchEmpty.style.display = visible === 0 && q ? 'block' : 'none';
                 updateCount(visible);
             };
@@ -1629,11 +1674,11 @@ print(cves["data"])</pre>
             const params = new URLSearchParams(window.location.search);
             const initialQuery = params.get('q') || '';
             const initialMode = params.get('mode') === 'title' || initialQuery ? 'title' : 'date';
-            setSearchMode(initialMode);
-            if (initialQuery && searchInput) {
-                searchInput.value = initialQuery;
-                runSearch();
+            if (initialQuery) {
+                if (initialMode === 'title') lastTitleQuery = initialQuery;
+                else lastDateQuery = initialQuery;
             }
+            setSearchMode(initialMode);
         })();
 
         (function initItemAiJump() {

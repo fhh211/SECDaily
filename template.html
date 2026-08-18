@@ -1328,12 +1328,12 @@
                 const url = (btn.dataset.articleUrl || '').replace(/&amp;/g, '&');
                 if (!title) return;
 
-                const dailyDate = document.querySelector('.article-head .date, .date')?.textContent?.trim() || '';
+                const headerDate = (document.querySelector('.article-head .date')?.textContent || '').match(/\d{4}-\d{2}-\d{2}/);
                 const meta = {
                     title,
                     url,
                     source: btn.dataset.articleSource || '',
-                    date: btn.dataset.articleDate || dailyDate,
+                    date: btn.dataset.articleDate || (headerDate ? headerDate[0] : ''),
                     hasCve: btn.dataset.articleCve === 'true',
                 };
                 const prompt = buildPrompt(meta);
