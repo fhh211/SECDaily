@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from secdaily_data import DEFAULT_ARCHIVE_DIR, DEFAULT_PAGE_SIZE, ArchiveStore  # noqa: E402
+from secdaily_data import DEFAULT_ARCHIVE_DIR, DEFAULT_PAGE_SIZE, ArchiveStore, paginate  # noqa: E402
 
 try:
     from config_loader import load_dotenv_if_available
@@ -53,23 +53,26 @@ def make_tools(store: ArchiveStore) -> dict[str, dict[str, Any]]:
         return store.health()
 
     def list_dates(year: str = "", limit: int = 30) -> dict[str, Any]:
-        data = store.list_dates(year=year or None, limit=limit or 30)
-        return {"latest": data[0]["date"] if data else None, "data": data}
+        all_dates = store.list_dates(year=year or None)
+        size = int(limit) if limit else None
+        data, pagination = paginate(all_dates, 1, size)
+        return {"latest": all_dates[0]["date"] if all_dates else None, "data": data, "pagination": pagination}
 
     def get_digest(
         date: str = "",
         source: str = "",
         cve_only: bool = False,
         page: int = 1,
-        page_size: int = DEFAULT_PAGE_SIZE,
+        page_size: Optional[int] = None,
         include_markdown: bool = False,
     ) -> dict[str, Any]:
+        size = page_size if page_size not in (None, 0) else None
         return store.get_digest(
             date_str=date or None,
             source=source or None,
             cve_only=cve_only,
             page=page,
-            page_size=page_size,
+            page_size=size,
             include_markdown=include_markdown,
         )
 
@@ -154,8 +157,8 @@ def make_tools(store: ArchiveStore) -> dict[str, dict[str, Any]]:
                     "date": {"type": "string", "description": "YYYY-MM-DD，可空表示最新"},
                     "source": {"type": "string", "description": "按来源名称过滤，支持子串匹配"},
                     "cve_only": {"type": "boolean", "description": "只返回标题含 CVE 的资讯"},
-                    "page": {"type": "integer", "default": 1},
-                    "page_size": {"type": "integer", "default": 20},
+                    "page": {"type": "integer", "description": "页码，仅在设置 page_size 时生效"},
+                    "page_size": {"type": "integer", "description": "每页条数；默认不传则返回当天全部"},
                     "include_markdown": {"type": "boolean", "description": "是否附带原始 Markdown"},
                 },
                 "additionalProperties": False,
@@ -165,7 +168,7 @@ def make_tools(store: ArchiveStore) -> dict[str, dict[str, Any]]:
                 source=str(arguments.get("source") or ""),
                 cve_only=bool(arguments.get("cve_only")),
                 page=int(arguments.get("page") or 1),
-                page_size=int(arguments.get("page_size") or DEFAULT_PAGE_SIZE),
+                page_size=int(arguments["page_size"]) if arguments.get("page_size") else None,
                 include_markdown=bool(arguments.get("include_markdown")),
             ),
         },

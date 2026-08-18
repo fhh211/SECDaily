@@ -41,10 +41,22 @@ def extract_cves(text: str) -> list[str]:
     return seen
 
 
-def paginate(items: list[Any], page: int, page_size: int) -> tuple[list[Any], dict[str, int]]:
-    page = max(1, int(page or 1))
-    page_size = min(MAX_PAGE_SIZE, max(1, int(page_size or DEFAULT_PAGE_SIZE)))
+def paginate(
+    items: list[Any],
+    page: int = 1,
+    page_size: Optional[int] = None,
+    max_size: int = MAX_PAGE_SIZE,
+) -> tuple[list[Any], dict[str, int]]:
     total = len(items)
+    if page_size is None or int(page_size) <= 0:
+        return items, {
+            "page": 1,
+            "pageSize": total,
+            "totalItems": total,
+            "totalPages": 1 if total else 0,
+        }
+    page = max(1, int(page or 1))
+    page_size = min(max_size, max(1, int(page_size)))
     start = (page - 1) * page_size
     sliced = items[start : start + page_size]
     total_pages = (total + page_size - 1) // page_size if total else 0
@@ -205,7 +217,7 @@ class ArchiveStore:
         source: Optional[str] = None,
         cve_only: bool = False,
         page: int = 1,
-        page_size: int = DEFAULT_PAGE_SIZE,
+        page_size: Optional[int] = None,
         include_markdown: bool = False,
     ) -> dict[str, Any]:
         date_str = self.resolve_date(date_str)
@@ -223,9 +235,9 @@ class ArchiveStore:
             articles = [item for item in articles if item["hasCve"]]
         page_data, pagination = paginate(articles, page, page_size)
         stats = {
-            "totalArticles": sum(len(item["articles"]) for item in sources),
-            "totalSources": len(sources),
-            "cveCount": sum(1 for item in flatten_articles(sources, date_str) if item["hasCve"]),
+            "totalArticles": len(articles),
+            "totalSources": len({item["source"] for item in articles}),
+            "cveCount": sum(1 for item in articles if item["hasCve"]),
         }
         result: dict[str, Any] = {
             "date": date_str,

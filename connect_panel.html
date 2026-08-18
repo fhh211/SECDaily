@@ -170,7 +170,8 @@ python api_server.py</pre>
             <ul>
                 <li>OpenAPI：<code>/api/v1/openapi.json</code></li>
                 <li>可选请求头：<code>X-API-Key</code></li>
-                <li>分页：<code>page</code> / <code>pageSize</code>（最大 100）</li>
+                <li>日报 <code>/digest</code> 默认返回当天全部，不用翻页</li>
+                <li>搜索 <code>/articles</code>、<code>/cves</code> 才分页：<code>page</code> / <code>pageSize</code>（默认 20，最大 100）</li>
             </ul>
         </article>
     </div>
@@ -219,9 +220,9 @@ python api_server.py</pre>
                 <tr>
                     <td><span class="method">GET</span></td>
                     <td><code>/api/v1/digest/{date}</code></td>
-                    <td>指定日期日报，可 cveOnly、source</td>
-                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10"</td>
-                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10&quot;">复制</button></td>
+                    <td>指定日期日报，可 cveOnly、source；默认当天全部</td>
+                    <td class="api-example">curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true"</td>
+                    <td><button type="button" class="copy-btn" data-copy-text="curl &quot;http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&quot;">复制</button></td>
                 </tr>
                 <tr>
                     <td><span class="method">GET</span></td>
@@ -285,7 +286,7 @@ python api_server.py</pre>
 curl http://127.0.0.1:8765/api/v1/health
 curl "http://127.0.0.1:8765/api/v1/dates?limit=7"
 curl http://127.0.0.1:8765/api/v1/digest
-curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&amp;pageSize=10"
+curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true"
 curl "http://127.0.0.1:8765/api/v1/articles?q=MCP&amp;from=2026-04-01&amp;pageSize=5"
 curl "http://127.0.0.1:8765/api/v1/cves?q=2026-4893"
 curl "http://127.0.0.1:8765/api/v1/sources?date=2026-05-28"
@@ -311,8 +312,8 @@ Invoke-RestMethod -Method Post http://127.0.0.1:8765/api/v1/analyze -ContentType
 
 base = "http://127.0.0.1:8765/api/v1"
 print(requests.get(f"{base}/health").json()["latestDate"])
-digest = requests.get(f"{base}/digest", params={"pageSize": 5}).json()
-print(digest["date"], digest["stats"])
+digest = requests.get(f"{base}/digest").json()
+print(digest["date"], digest["stats"], len(digest["data"]))
 news = requests.get(f"{base}/articles", params={"q": "MCP", "pageSize": 5}).json()
 for item in news["data"]:
     print(item["date"], item["title"], item["url"])

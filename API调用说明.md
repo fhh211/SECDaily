@@ -59,7 +59,11 @@ python api_server.py --host 127.0.0.1 --port 8765 --archive-dir archive
 Base URL：`http://127.0.0.1:8765/api/v1`  
 OpenAPI：`GET /api/v1/openapi.json`
 
-列表接口统一分页：`page`（从 1 起）、`pageSize`（默认 20，最大 100）。
+列表接口里，**只有搜索需要分页**：`/articles`、`/cves` 使用 `page`（从 1 起）、`pageSize`（默认 20，最大 100）。
+
+`GET /digest` 是某一天的完整日报，默认返回当天全部条目，不要按 20 条截断。只有调用方显式传 `pageSize` 时才切片。
+
+`GET /dates` 默认返回全部日期；`limit` / `pageSize` 只影响返回条数，`pagination.totalItems` 仍是真实总数。
 
 ### 接口一览
 
@@ -78,15 +82,6 @@ OpenAPI：`GET /api/v1/openapi.json`
 | POST | `/reload` | 重载搜索索引缓存 |
 
 MCP 不走 `/api/v1` 前缀：`GET/POST /mcp`。
-| GET | `/digest` | 最新一天日报 |
-| GET | `/digest/{date}` | 指定日期日报 |
-| GET | `/articles` | 关键词搜索（`/search` 为别名） |
-| GET | `/cves` | 从标题中检索 CVE |
-| GET | `/sources` | 来源列表 |
-| GET | `/summary` | 最新一天 AI 总结（若存在） |
-| GET | `/summary/{date}` | 指定日期 AI 总结 |
-| POST | `/analyze` | 需求文本 8 类安全评估 |
-| POST | `/reload` | 重载搜索索引缓存 |
 
 错误体：
 
@@ -121,7 +116,7 @@ curl "http://127.0.0.1:8765/api/v1/dates?year=2026&limit=7"
 
 # 最新日报 / 指定日期（只要 CVE）
 curl http://127.0.0.1:8765/api/v1/digest
-curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true&pageSize=10"
+curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?cveOnly=true"
 curl "http://127.0.0.1:8765/api/v1/digest/2026-05-28?source=SecurityWeek"
 
 # 关键词搜索
@@ -163,8 +158,8 @@ import requests
 base = "http://127.0.0.1:8765/api/v1"
 print(requests.get(f"{base}/health").json()["latestDate"])
 
-digest = requests.get(f"{base}/digest", params={"pageSize": 5, "cveOnly": True}).json()
-print(digest["date"], digest["stats"])
+digest = requests.get(f"{base}/digest", params={"cveOnly": True}).json()
+print(digest["date"], digest["stats"], len(digest["data"]))
 
 news = requests.get(f"{base}/articles", params={"q": "MCP", "pageSize": 5}).json()
 for item in news["data"]:
@@ -183,9 +178,9 @@ const news = await fetch(`${base}/articles?q=MCP&pageSize=5`).then((r) => r.json
 console.log(health.latestDate, news.data);
 ```
 
-`GET /dates` 参数：`year`（四位年份）、`limit`。  
-`GET /digest` 参数：`source`、`cveOnly`、`includeMarkdown`、`page`、`pageSize`。  
-`GET /articles` 参数：`q`、`source`、`date`、`from`、`to`、`cveOnly`。  
+`GET /dates` 参数：`year`（四位年份）；可选 `page`、`pageSize` / `limit`（只切返回条数，不改 `totalItems`）。  
+`GET /digest` 参数：`source`、`cveOnly`、`includeMarkdown`；可选 `page`、`pageSize`（不传则当天全部）。  
+`GET /articles` 参数：`q`、`source`、`date`、`from`、`to`、`cveOnly`、`page`、`pageSize`。  
 `GET /cves` 的 `q` 可以是 `CVE-2026-4893` 或 `2026-4893`。
 
 ---

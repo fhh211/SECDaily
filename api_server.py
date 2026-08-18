@@ -20,6 +20,7 @@ from secdaily_data import (  # noqa: E402
     DEFAULT_ARCHIVE_DIR,
     DEFAULT_PAGE_SIZE,
     ArchiveStore,
+    paginate,
 )
 from mcp_server import McpServer  # noqa: E402
 
@@ -266,26 +267,27 @@ class SecDailyAPIHandler(BaseHTTPRequestHandler):
             return json_bytes(openapi_spec(self.server_host, self.server_port))
         if path == f"{API_PREFIX}/dates":
             year = first_query(params, "year")
-            limit = first_query(params, "limit")
-            data = store.list_dates(year=year, limit=int(limit) if limit else None)
+            all_dates = store.list_dates(year=year)
+            page_size_raw = first_query(params, "pageSize", "page_size", "limit")
+            page_data, pagination = paginate(
+                all_dates,
+                as_int(first_query(params, "page"), 1),
+                as_int(page_size_raw, DEFAULT_PAGE_SIZE) if page_size_raw is not None else None,
+            )
             return json_bytes({
-                "latest": data[0]["date"] if data else None,
-                "data": data,
-                "pagination": {
-                    "page": 1,
-                    "pageSize": len(data),
-                    "totalItems": len(data),
-                    "totalPages": 1,
-                },
+                "latest": all_dates[0]["date"] if all_dates else None,
+                "data": page_data,
+                "pagination": pagination,
             })
         if path in {f"{API_PREFIX}/digest"} or path.startswith(f"{API_PREFIX}/digest/"):
             date = path[len(f"{API_PREFIX}/digest/") :] if path.startswith(f"{API_PREFIX}/digest/") else first_query(params, "date")
+            page_size_raw = first_query(params, "pageSize", "page_size")
             return json_bytes(store.get_digest(
                 date_str=date,
                 source=first_query(params, "source"),
                 cve_only=as_bool(first_query(params, "cveOnly", "cve_only")),
                 page=as_int(first_query(params, "page"), 1),
-                page_size=as_int(first_query(params, "pageSize", "page_size"), DEFAULT_PAGE_SIZE),
+                page_size=as_int(page_size_raw, DEFAULT_PAGE_SIZE) if page_size_raw is not None else None,
                 include_markdown=as_bool(first_query(params, "includeMarkdown", "include_markdown")),
             ))
         if path in {f"{API_PREFIX}/articles", f"{API_PREFIX}/search"}:
