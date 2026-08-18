@@ -16,6 +16,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# HTML5 空元素：不需要成对闭合
+VOID_TAGS = frozenset({
+    "area", "base", "br", "col", "embed", "hr", "img", "input",
+    "link", "meta", "param", "source", "track", "wbr",
+})
+
+
 class HTMLValidationParser(HTMLParser):
     """HTML验证解析器，用于检查HTML文件的基本结构和有效性"""
     
@@ -45,9 +52,7 @@ class HTMLValidationParser(HTMLParser):
         """处理开始标签"""
         self.update_position(self.current_data)
         self.current_data = ""
-        
-        self.tags.append((tag, self.line_number, self.column_number))
-        
+
         if tag == 'html':
             self.has_html = True
         elif tag == 'head':
@@ -56,6 +61,11 @@ class HTMLValidationParser(HTMLParser):
             self.has_body = True
         elif tag == 'title':
             self.has_title = True
+
+        if tag in VOID_TAGS:
+            return
+
+        self.tags.append((tag, self.line_number, self.column_number))
         
         # 检查属性
         for attr_name, attr_value in attrs:
@@ -67,6 +77,9 @@ class HTMLValidationParser(HTMLParser):
         self.update_position(self.current_data)
         self.current_data = ""
         
+        if tag in VOID_TAGS:
+            return
+
         # 检查标签是否匹配
         if self.tags and self.tags[-1][0] == tag:
             self.tags.pop()
