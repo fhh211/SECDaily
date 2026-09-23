@@ -1,24 +1,28 @@
-# SECDaily
+**语言 / Language:** 中文 | [English](README.en.md)
 
-[中文](README.md) · [English](README_EN.md)
-
-> 安全资讯 RSS 日报：聚合、归档、搜索与单条 AI 分析  
-> **仓库**：[github.com/shellsec/SECDaily](https://github.com/shellsec/SECDaily) · **问题反馈**：[Issues](https://github.com/shellsec/SECDaily/issues)
+[aiv123.com](https://aiv123.com/) · AI 工具导航，600+ 工具一网打尽
 
 ## 🚀 推荐使用 [ofox.ai](https://ofox.io/x/aiv123)
 
-> **一句话**：一个账号直达 GPT-5.5 / Claude 4.8 Opus / Gemini 3.5 Flash 等 **100+** 顶尖模型，首充额外赠 **$3** 额度。
+> **一句话**：一个账号直达最新 GPT / Claude / Gemini 等 **100+** 顶尖模型，首充额外赠 **$3** 额度。
+
+文本、图像、视频、向量一站调用；支持缓存，重复请求更省更快。
 
 [👉 注册领取](https://ofox.io/x/aiv123) · 全球专线 · 企业级 SLA · 不留存对话
 
-| ⚡️ 极速稳定 | 🧠 模型全 | 🛡️ 隐私安全 |
+| ⚡️ 极速更省 | 🧠 模型与模态 | 🛡️ 隐私安全 |
 |:---:|:---:|:---:|
-| 全球专线，企业级 SLA | 100+ 模型一号直达 | 不留存任何对话 |
+| 全球专线，企业级 SLA，支持缓存 | 100+ 模型 · 文本 / 图像 / 视频 / 向量 | 不留存任何对话 |
 
 ## ☕ 请我喝可乐
 
 开源不易，欢迎赞助支持：  
 👉 [爱发电](https://ifdian.net/a/shellsec)
+
+# SECDaily
+
+> 安全资讯 RSS 日报：聚合、归档、搜索与单条 AI 分析  
+> **仓库**：[github.com/shellsec/SECDaily](https://github.com/shellsec/SECDaily) · **问题反馈**：[Issues](https://github.com/shellsec/SECDaily/issues)
 
 ## 项目简介
 
