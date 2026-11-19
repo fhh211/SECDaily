@@ -1,4 +1,4 @@
-name: SECDaily 自动抓取
+name: SECDaily 自动抓取（邮件 + 企微 + AI 总结）
 
 on:
   schedule:
@@ -11,17 +11,44 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    env:
+      MAIL_ADDRESS: ${{ secrets.MAIL_ADDRESS }}
+      MAIL_KEY: ${{ secrets.MAIL_KEY }}
+      MAIL_RECEIVER: ${{ secrets.MAIL_RECEIVER }}
+      MAIL_SERVER: ${{ secrets.MAIL_SERVER }}
+      MAIL_FROM: ${{ secrets.MAIL_FROM }}
+      WECOM_KEY: ${{ secrets.WECOM_KEY }}
+      AI_API_URL: ${{ secrets.AI_API_URL }}
+      AI_API_KEY: ${{ secrets.AI_API_KEY }}
+      AI_MODEL: ${{ secrets.AI_MODEL }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Prepare config
-        run: cp config.example.json config.json
+
+      - name: Prepare config (enable mail / wecom / AI)
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          c = json.loads(pathlib.Path('config.example.json').read_text(encoding='utf-8'))
+          c['bot']['mail']['enabled'] = True
+          c['bot']['wecom']['enabled'] = True
+          c['AISummary']['enabled'] = True
+          pathlib.Path('config.json').write_text(
+              json.dumps(c, ensure_ascii=False, indent=2), encoding='utf-8')
+          print('config.json generated: mail / wecom / AI enabled')
+          PY
+
       - name: Run yarb (force daily scrape)
         run: python yarb.py --force
+
       - name: Commit daily report
         run: |
           git config user.name "github-actions[bot]"
