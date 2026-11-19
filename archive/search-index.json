@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19 13:13:03",
-  "total": 65777,
+  "updated_at": "2026-11-19 13:57:41",
+  "total": 65778,
   "articles": [
     {
       "title": "黄仁勋会不会回归 如奥特曼故事？",
@@ -13,6 +13,13 @@
       "title": "黄仁勋下台：33 年的船长，五天就被请下了船",
       "url": "http://wjd.name/huang-resigns-nvidia/",
       "source": "王佳冬中文博客",
+      "date": "2026-11-19",
+      "page": "2026/2026-11-19.html"
+    },
+    {
+      "title": "预警！Vite 开发服务器暴露于网络，可致任意代码执行",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU3ODAyMjg4OQ==&mid=2247498130&idx=1&sn=cee6f9f0f0437a733ba4466fb46a6fdd",
+      "source": "云鼎实验室",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -808,16 +815,16 @@
       "page": "2026/2026-11-19.html"
     },
     {
-      "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-      "url": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
-      "source": "SecurityWeek",
+      "title": "Run and Scale Your MSSP or SOC Like Never Before: Meet ANY.RUN’s Multi-Tenant Teamspace",
+      "url": "https://any.run/cybersecurity-blog/teamspace-for-soc-and-mssp/",
+      "source": "Over Security",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
     {
-      "title": "Run and Scale Your MSSP or SOC Like Never Before: Meet ANY.RUN’s Multi-Tenant Teamspace",
-      "url": "https://any.run/cybersecurity-blog/teamspace-for-soc-and-mssp/",
-      "source": "Over Security",
+      "title": "Read-only to root anyway: Local privilege escalation in libvirt",
+      "url": "https://github.security.telekom.com/2026/11/read-only-to-root-anyway-libvirt-local-privilege-escalation.html",
+      "source": "Telekom Security",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
