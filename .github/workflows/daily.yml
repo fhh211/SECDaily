@@ -11,7 +11,6 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
     env:
       MAIL_ADDRESS: ${{ secrets.MAIL_ADDRESS }}
       MAIL_KEY: ${{ secrets.MAIL_KEY }}
@@ -45,26 +44,6 @@ jobs:
           pathlib.Path('config.json').write_text(
               json.dumps(c, ensure_ascii=False, indent=2), encoding='utf-8')
           print('config.json generated: mail / wecom / AI enabled')
-          PY
-
-      - name: Patch mail bot (email failure becomes non-fatal)
-        run: |
-          python - <<'PY'
-          import pathlib
-          p = pathlib.Path('bot.py')
-          s = p.read_text(encoding='utf-8')
-          old = "        self.smtp = smtplib.SMTP_SSL(server)\n        self.smtp.login(sender, passwd)"
-          new = """        try:
-            self.smtp = smtplib.SMTP_SSL(server, timeout=30)
-            self.smtp.login(sender, passwd)
-        except Exception as e:
-            print(f'[!] mailBot 初始化失败，跳过邮件推送: {e}')
-            self.smtp = None"""
-          if old in s:
-              p.write_text(s.replace(old, new, 1), encoding='utf-8')
-              print('patched bot.py: SMTP login is now non-fatal')
-          else:
-              print('WARN: mail init pattern not found; patch skipped')
           PY
 
       - name: Run yarb (force daily scrape)
