@@ -38,7 +38,7 @@ jobs:
           python - <<'PY'
           import json, pathlib
           c = json.loads(pathlib.Path('config.example.json').read_text(encoding='utf-8'))
-          c['bot']['mail']['enabled'] = False
+          c['bot']['mail']['enabled'] = True
           c['bot']['wecom']['enabled'] = False
           c['AISummary']['enabled'] = False
           pathlib.Path('config.json').write_text(
