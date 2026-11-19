@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19 09:22:44",
-  "total": 65782,
+  "updated_at": "2026-11-19 12:57:11",
+  "total": 65777,
   "articles": [
     {
       "title": "黄仁勋会不会回归 如奥特曼故事？",
@@ -391,6 +391,13 @@
       "title": "【技巧】人工智能赋能开源情报（OSINT）实操指南",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI2MTE0NTE3Mw==&mid=2651158068&idx=1&sn=e8a0450ed82aa22f2a3e18d25fb69f1f",
       "source": "丁爸 情报分析师的工具箱",
+      "date": "2026-11-19",
+      "page": "2026/2026-11-19.html"
+    },
+    {
+      "title": "【已复现】nginx2root nginx 多个远程代码执行漏洞安全风险通告",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5NDgxODU1MQ==&mid=2247508164&idx=1&sn=d43f6cd52bc411189b19efb581b897ec",
+      "source": "奇安信 CERT",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -990,20 +997,6 @@
       "page": "2026/2026-11-19.html"
     },
     {
-      "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
-      "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-      "source": "SecurityWeek",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
-      "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
-      "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
-      "source": "SecurityWeek",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
       "title": "Memos: 周大福 EOF 电商专属商品款号",
       "url": "https://blog.yasking.org/a/1794966132",
       "source": "东东's Blog",
@@ -1042,13 +1035,6 @@
       "title": "Latest post on Threads：2026.11.17",
       "url": "https://www.changhai.org/articles/miscellaneous/eblog/202609.php#latest",
       "source": "卢昌海个人主页",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
-      "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
-      "url": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
-      "source": "SecurityWeek",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -1279,14 +1265,14 @@
     {
       "title": "Fake Conad Plus App: A Promise of 10× Loyalty Points Conceals Android Malware",
       "url": "https://www.d3lab.net/fake-conad-plus-app-a-promise-of-10x-loyalty-points-conceals-android-malware/",
-      "source": "D3Lab",
+      "source": "Over Security",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
     {
       "title": "Fake Conad Plus App: A Promise of 10× Loyalty Points Conceals Android Malware",
       "url": "https://www.d3lab.net/fake-conad-plus-app-a-promise-of-10x-loyalty-points-conceals-android-malware/",
-      "source": "Over Security",
+      "source": "D3Lab",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -1368,13 +1354,6 @@
       "page": "2026/2026-11-19.html"
     },
     {
-      "title": "Critical Perforce Puppet RCE Exploited in Attacks",
-      "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-      "source": "SecurityWeek",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
       "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
       "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
       "source": "The Hacker News",
@@ -1399,13 +1378,6 @@
       "title": "Click to Pray, Click to Leak: The Pope's Official App Exposes 700,000+ User Emails",
       "url": "https://pentester.ca/blog/click-to-pray",
       "source": "Over Security",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
-      "title": "Chrome 158 Patches 204 Vulnerabilities",
-      "url": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-      "source": "SecurityWeek",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -1448,13 +1420,6 @@
       "title": "CVE-2026-104007与CVE-2026-104692 LibreOffice JDBC驱动加载与HSQLDB任意代码执行漏洞分析",
       "url": "https://xz.aliyun.com/news/93387",
       "source": "先知安全技术社区",
-      "date": "2026-11-19",
-      "page": "2026/2026-11-19.html"
-    },
-    {
-      "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
-      "url": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
-      "source": "SecurityWeek",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
     },
@@ -1642,7 +1607,7 @@
     },
     {
       "title": "AI 时代的审美赤字：当人人都能做出一个 App",
-      "url": "https://innei.in/posts/tinkering/AI-App",
+      "url": "https://innei.in/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
       "source": "Innei",
       "date": "2026-11-19",
       "page": "2026/2026-11-19.html"
