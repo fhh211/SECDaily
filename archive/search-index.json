@@ -1,7 +1,735 @@
 {
-  "updated_at": "2026-11-21 10:13:01",
-  "total": 66170,
+  "updated_at": "2026-11-22 10:17:28",
+  "total": 66274,
   "articles": [
+    {
+      "title": "️ Apple HOF (May 2026): Stopping Podcast Hijacking",
+      "url": "https://infosecwriteups.com/%EF%B8%8F-apple-hof-may-2026-stopping-podcast-hijacking-5baf19fae4f4?source=rss----7b722bfd1b8d--bug_bounty",
+      "source": "Bug Bounty in InfoSec Write-ups on Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "黎曼两百年之际，猜想QED之时",
+      "url": "https://xingwangzhe.fun/posts/riemann-at-200/",
+      "source": "姓王者的博客",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "雨夜生存指南",
+      "url": "https://blog.aeilot.top/2026/11/20/rain-survival/",
+      "source": "Louis C Deng's Blog",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "通灵卡片Psychic Paper",
+      "url": "https://yuqiqin.me/",
+      "source": "Psychic Paper",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "说说：终于实现了烤鸡腿自由了！",
+      "url": "https://www.mmbkz.cn/d006a18e.html",
+      "source": "喵喵小站・博客志",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "薅羊毛：边花钱边省钱",
+      "url": "https://cyrusyip.org/zh-cn/posts/2026/11/22/hao-yang-mao/",
+      "source": "叶寻的博客",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "清华博士做了一款 AI 懒人办公神器，30 天众筹 130 万美元",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653116927&idx=1&sn=fccb701b697ab4282ed4d231f42b677b",
+      "source": "极客公园",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "每一次「观察锁定」都有其内侧面向，内侧只能从该次收敛自身通达，任何第三方的检验本身已是新的收敛，所能检验的只是「外侧」。",
+      "url": "https://zhurongshuo.com/posts/2026/11/2201/",
+      "source": "祝融说。",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "检测大全：Android 检测对抗源码级实战（配套3大自研工具）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624361&idx=2&sn=2800d8886b3a066443eebb5968737646",
+      "source": "看雪学苑",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "林俊旸新公司估值升至 50 亿美元；丁磊：短剧爆发冲击游戏产业；华为新品牌星芒发布首款阔直板手机 | 极客早知道",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653116901&idx=1&sn=5a5337f17993468b99814a63203b38d3",
+      "source": "极客公园",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "杭州最热那几个月，我在家里暗无天日度过",
+      "url": "https://ourai.ws/posts/concluding-the-first-software-outsourcing-project-collaboration/",
+      "source": "欧雷流",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "最新微博：2026 年 11 月 20 日",
+      "url": "https://www.changhai.org/articles/miscellaneous/blog/202611.php#latest",
+      "source": "卢昌海个人主页",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "我开始理解二平方和定理，是因为有人没有急着告诉我答案",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUyMTUwMzI3Ng==&mid=2247486354&idx=1&sn=bf04b8d3f8f8c0b0b615c07fa906e7ee",
+      "source": "OnionSec",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "想卖我5980的FB广告投流课，你还未必投得过我",
+      "url": "https://yuqiqin.me/lets-see-who-is-real-evil-genius/",
+      "source": "Psychic Paper",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "市场与互联网通常只有由成员代理执行且间断发生的认出，故无稳定统一的「我」；大脑的统一主体，本身就是低层收敛被「再收敛」的既成结果。",
+      "url": "https://zhurongshuo.com/posts/2026/11/2203/",
+      "source": "祝融说。",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "密码保护：呪いの王と、血に飢えた医療隊長",
+      "url": "https://shinekid.com/2026/11/unohana-retsu-in-jujutsu-kaisen/",
+      "source": "ShineKid",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "图书的插画",
+      "url": "https://kaix.in/2026/1121/",
+      "source": "KAIX.IN",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "凌晨一点，我在厨房开椰子",
+      "url": "https://dusays.com/posts/899/",
+      "source": "杜老师说",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "关于混元 4 模型、算力、刷榜与 RSI，姚顺雨回应一切",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653116908&idx=1&sn=db1021bcba9e5f9a21ab494798b8ebd1",
+      "source": "极客公园",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "使用手机遥控让AI干活这件事可太有趣了之文档篇",
+      "url": "https://youerning.top/post/phone-remote-ai-docs/",
+      "source": "又耳笔记",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "你站哪边？",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-21-what-place-to-you-prefer-to-stand.html",
+      "source": "SEISAMUSE",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "他人的「主体性」同样无法被第三方检测，有限秩序得以成立，是由「观察共识」持续维持的实践预设。",
+      "url": "https://zhurongshuo.com/posts/2026/11/2202/",
+      "source": "祝融说。",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "一款单文件静态链接版Web Terminal",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUzMjQyMDE3Ng==&mid=2247490095&idx=1&sn=3021374c9c6d54645f2dff88abdea78c",
+      "source": "青衣十三楼飞花堂",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "一文从零手搓大语言模型训练和推理",
+      "url": "//owent.net/2026/2613.html",
+      "source": "I'm OWenT",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "一场专挑iPhone下手的恶意广告行动",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxOTM1MDQ1NA==&mid=2451190006&idx=1&sn=83db193b27264e4becfc1408c81f0822",
+      "source": "黑鸟",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "【安全圈】黑客部署自主AI智能体：11分钟自挖0day攻陷服务器夺Root",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652079967&idx=2&sn=85167f3d14ddd041423b52b5fed14503",
+      "source": "安全圈",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "【安全圈】安卓恶意框架Bazuka曝光：截屏假锁屏掩护盗窃集成AI评分",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652079967&idx=3&sn=97d432e3da143b3dec3677290d6a03eb",
+      "source": "安全圈",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "【安全圈】Linux KVM曝高危逃逸漏洞：虚机跨租户直读宿主机127GB内存",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652079967&idx=1&sn=38dfa6a339d62a690035a68d6f9dad4c",
+      "source": "安全圈",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "wifit3 v0.7.2",
+      "url": "https://kitploit.com/en/posts/wifit3-687259105cef9773",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "wifit3 v0.7.2",
+      "url": "https://kitploit.com/en/posts/wifit3-687259105cef9773",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "nginx2root",
+      "url": "https://kitploit.com/en/tools/github/censys-research/nginx2root",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "nginx2root",
+      "url": "https://kitploit.com/en/tools/github/censys-research/nginx2root",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "kernel-krop-smep-bypass",
+      "url": "https://kitploit.com/en/tools/github/exploitbey/kernel-krop-smep-bypass",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "kernel-krop-smep-bypass",
+      "url": "https://kitploit.com/en/tools/github/exploitbey/kernel-krop-smep-bypass",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "iotaudit",
+      "url": "https://kitploit.com/en/tools/github/emirmrkaljevic/iotaudit",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "iotaudit",
+      "url": "https://kitploit.com/en/tools/github/emirmrkaljevic/iotaudit",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "invisible_playwright v0.58.0",
+      "url": "https://kitploit.com/en/posts/invisible_playwright-3a6234ea71e8a448",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "invisible_playwright v0.58.0",
+      "url": "https://kitploit.com/en/posts/invisible_playwright-3a6234ea71e8a448",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "dsh-infinite-gen-5 v1.4.0",
+      "url": "https://kitploit.com/en/posts/dsh-infinite-gen-5-c43fc4931b59b8a8",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "dsh-infinite-gen-5 v1.4.0",
+      "url": "https://kitploit.com/en/posts/dsh-infinite-gen-5-c43fc4931b59b8a8",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "couch-tv 下载安装：Android TV 无广告桌面",
+      "url": "https://www.wangdu.site/software/dianshihezi/2431.html",
+      "source": "文武科技柜",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "bionz-x-research",
+      "url": "https://kitploit.com/en/tools/github/ivica00/bionz-x-research",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "bionz-x-research",
+      "url": "https://kitploit.com/en/tools/github/ivica00/bionz-x-research",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "aitarpit",
+      "url": "https://kitploit.com/en/tools/github/rbidou/aitarpit",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "aitarpit",
+      "url": "https://kitploit.com/en/tools/github/rbidou/aitarpit",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "admin:admin123 — How Default Keycloak Credentials on a Cargo Training Environment Exposed 766…",
+      "url": "https://infosecwriteups.com/admin-admin123-how-default-keycloak-credentials-on-a-cargo-training-environment-exposed-766-f026dcf45023?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Update Sat Nov 21 14:59:57 UTC 2026",
+      "url": "https://github.com/trickest/cve/commit/e613b9cf5ea3122af87f6f17e4e9aeb45846135c",
+      "source": "Recent Commits to cve:main",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/203639/security/u-s-cisa-adds-cisco-expressway-sap-netweaver-broadcom-vmware-vcenter-and-apache-roller-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Security Affairs",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Turning Two Macs into an AI Workspace: Is T3 Code the Right Control Plane?",
+      "url": "https://jimmysong.io/blog/t3-code-mac-agent-control-plane/",
+      "source": "Jimmy Song – Jimmy Song's Blog",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "The Machinery of Life",
+      "url": "http://wwj718.github.io/post/%E8%AF%BB%E4%B9%A6/the-machinery-of-life/",
+      "source": "种瓜",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "The Bare LLM: Manipulating the CloudBank Chatbot (Part 2)",
+      "url": "https://infosecwriteups.com/inside-the-bare-llm-manipulating-the-cloudbank-chatbot-part-2-8efbc92666a7?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "The Bare LLM: Attacking and Securing the FruitMart Chatbot (Part 1)",
+      "url": "https://infosecwriteups.com/inside-the-bare-llm-attacking-and-securing-the-fruitmart-chatbot-part-1-4eabe9ad5bbe?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "source": "The Hacker News",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "source": "Over Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "President Trump Taps Kirsten Davies as National Cyber Director",
+      "url": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+      "source": "SecurityWeek",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Passing the OSEP: Course Review and Exam Preparation tips",
+      "url": "https://infosecwriteups.com/passing-the-osep-course-review-and-exam-preparation-tips-167f987251f4?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "PHP2Shell（CVE-2026-109618）UAF 路径分析与隔离环境复现记录",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624361&idx=1&sn=35c1bfcaa62d03b1ebed692d70c5a7f0",
+      "source": "看雪学苑",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "PHP2Shell: Practical RCE Reproduction in a Docker Lab",
+      "url": "https://infosecwriteups.com/php2shell-practical-rce-reproduction-in-a-docker-lab-fc00fb2a8cf8?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "OSEP-Tools-v2",
+      "url": "https://kitploit.com/en/tools/github/hackinaggie/osep-tools-v2",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "OSEP-Tools-v2",
+      "url": "https://kitploit.com/en/tools/github/hackinaggie/osep-tools-v2",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "OSEP",
+      "url": "https://kitploit.com/en/tools/github/b4l3ri0n/osep",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "OSEP",
+      "url": "https://kitploit.com/en/tools/github/b4l3ri0n/osep",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "NYC Transit Fare Schemes: An Illustrated History",
+      "url": "https://zeltser.com/nyc-transit-fare-schemes",
+      "source": "Lenny Zeltser",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "NYC Transit Fare Schemes: An Illustrated History",
+      "url": "https://zeltser.com/nyc-transit-fare-schemes",
+      "source": "Lenny Zeltser",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "My Journey To Conquering The OSCE3",
+      "url": "https://infosecwriteups.com/my-journey-to-conquering-the-osce3-e4cb5d68467b?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "source": "Over Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Java4Shell（CVE-2026-114938）漏洞安全响应指南",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI0MTE4ODY3Nw==&mid=2247493048&idx=1&sn=9c4df8303ad15b94957fbc6bccb9f677",
+      "source": "白泽安全实验室",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "How a Simple Login Gave Me $4,000 After I Found Their Entire 760 GB+ PII Exposed!",
+      "url": "https://infosecwriteups.com/how-a-simple-login-gave-me-4-000-after-i-found-their-entire-760-gb-pii-exposed-bc39ad5281d1?source=rss----7b722bfd1b8d--bug_bounty",
+      "source": "Bug Bounty in InfoSec Write-ups on Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "How a Silent Websocket Led Me to Unauthenticated Uploads on a University’s Exam Platform",
+      "url": "https://infosecwriteups.com/the-anonymous-5-gb-file-host-that-almost-wasnt-how-a-silent-websocket-led-me-to-unauthenticated-c34120be1492?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "How a Silent Websocket Led Me to Unauthenticated Uploads on a University’s Exam Platform",
+      "url": "https://infosecwriteups.com/the-anonymous-5-gb-file-host-that-almost-wasnt-how-a-silent-websocket-led-me-to-unauthenticated-c34120be1492?source=rss----7b722bfd1b8d--bug_bounty",
+      "source": "Bug Bounty in InfoSec Write-ups on Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Haecksen Workshops Call for Participation",
+      "url": "https://events.ccc.de/2026/11/21/40c3-haecksen-workshops-call-for-participation/",
+      "source": "CCC Event Blog",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "source": "The Hacker News",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "HackTheBox-Reporting",
+      "url": "https://kitploit.com/en/tools/github/syslifters/hackthebox-reporting",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "HackTheBox-Reporting",
+      "url": "https://kitploit.com/en/tools/github/syslifters/hackthebox-reporting",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "source": "The Hacker News",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "GTA VI e Altri Giochi Non Avranno Più Il Disco Fisico? Motivazioni",
+      "url": "http://darkwhite666.blogspot.com/2026/11/gta-vi-e-altri-giochi-non-avranno-piu.html",
+      "source": "Dark Space Blogspot",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+      "source": "Over Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "ESP32Marauder v1.21.0",
+      "url": "https://kitploit.com/en/posts/esp32marauder-0122d52e79b40fdc",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "ESP32Marauder v1.21.0",
+      "url": "https://kitploit.com/en/posts/esp32marauder-0122d52e79b40fdc",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "DetectViT",
+      "url": "https://kitploit.com/en/tools/github/siquanhuang/detectvit",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "DetectViT",
+      "url": "https://kitploit.com/en/tools/github/siquanhuang/detectvit",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Cyberattack on Austrian Foreign Ministry Exposes Diplomatic Staff Data",
+      "url": "https://securityaffairs.com/203680/hacking/cyberattack-on-austrian-foreign-ministry-exposes-diplomatic-staff-data.html",
+      "source": "Security Affairs",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "CyberChef v11.6.0",
+      "url": "https://kitploit.com/en/posts/cyberchef-4b7cdcfbf399f154",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "CyberChef v11.6.0",
+      "url": "https://kitploit.com/en/posts/cyberchef-4b7cdcfbf399f154",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Current Stack",
+      "url": "https://danielmiessler.com/blog/current-stack?utm_source=rss&utm_medium=feed&utm_campaign=website",
+      "source": "Daniel Miessler",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "CrowdStrike洽购Zscaler，或缔造网络安全史上最大并购案",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDE5MDI5Mg==&mid=2247512247&idx=1&sn=68f66aeac3629fad43a87ffa6866d169",
+      "source": "数说安全",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Cairn AI Framework Used in Autonomous Zero-Day Exploitation",
+      "url": "https://securityaffairs.com/203664/ai/cairn-ai-framework-used-in-autonomous-zero-day-exploitation.html",
+      "source": "Security Affairs",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "source": "Over Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "source": "Krebs on Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Bypassing the Frontend Obfuscation: How I Uncovered a Company’s Entire Internal Architecture…",
+      "url": "https://infosecwriteups.com/bypassing-the-frontend-obfuscation-how-i-uncovered-a-companys-entire-internal-architecture-da95e27668c9?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Bypassing the Frontend Obfuscation: How I Uncovered a Company’s Entire Internal Architecture…",
+      "url": "https://infosecwriteups.com/bypassing-the-frontend-obfuscation-how-i-uncovered-a-companys-entire-internal-architecture-da95e27668c9?source=rss----7b722bfd1b8d--bug_bounty",
+      "source": "Bug Bounty in InfoSec Write-ups on Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Backdooring LLM’s with LoRa Adapters",
+      "url": "https://www.bordergate.co.uk/backdooring-llms-with-lora-adapters/",
+      "source": "BorderGate",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "BADBOX 3.0 botnet returns with record-breaking 40 billion daily ad requests",
+      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "source": "Over Security",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "source": "The Hacker News",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Apple HOF (August 2026): Unmasking a Blind SSRF in Podcasts Connect",
+      "url": "https://infosecwriteups.com/apple-hof-august-2026-unmasking-a-blind-ssrf-in-podcasts-connect-e86689990bab?source=rss----7b722bfd1b8d--bug_bounty",
+      "source": "Bug Bounty in InfoSec Write-ups on Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+      "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+      "source": "SecurityWeek",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "Agent凭证生命周期与轮换安全",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA4ODEyODA3MQ==&mid=2247497354&idx=1&sn=92b88319326f66cc65b982509f1843e5",
+      "source": "安全分析与研究",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "AI Red Teaming: Persistent Injection",
+      "url": "https://infosecwriteups.com/ai-red-teaming-persistent-injection-f1f5c8aeffcf?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "ACM CCS 2026 参会小记（4）：微信小程序的密码学安全问题",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg5ODUxMzg0Ng==&mid=2247502602&idx=1&sn=e1711bef9b7d43c0a00d021df58528bd",
+      "source": "安全研究GoSSIP",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "source": "The Hacker News",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "40C3: Call for Angels",
+      "url": "https://events.ccc.de/2026/11/21/40c3-call-for-angels/",
+      "source": "CCC Event Blog",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "2026年黑色星期五和网络星期一主机/域名/服务类活动收集",
+      "url": "https://51.ruyo.net/19783.html",
+      "source": "如有乐享",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "2010，瓢虫工作室",
+      "url": "https://www.tortorse.com/archives/ladybird-studio-2010/",
+      "source": "愆伏",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
+    {
+      "title": "14/14 on HTB CPTS, First Attempt: What Actually Mattered",
+      "url": "https://infosecwriteups.com/14-14-on-htb-cpts-first-attempt-what-actually-mattered-34ab2910551b?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-22",
+      "page": "2026/2026-11-22.html"
+    },
     {
       "title": "重磅 | 11.27 • 北京 TSCM行业专家研讨会",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE2OTQyNA==&mid=2648959612&idx=1&sn=d2a54f453813112eafb37b14cbcc1371",
