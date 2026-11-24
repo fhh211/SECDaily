@@ -1,7 +1,1463 @@
 {
-  "updated_at": "2026-11-23 11:12:41",
-  "total": 66397,
+  "updated_at": "2026-11-24 12:58:50",
+  "total": 66605,
   "articles": [
+    {
+      "title": "黑客组织借助合法的金山办公软件，通过DLL side-loading投放PureRAT与PureLogs恶意木马",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI0MTE4ODY3Nw==&mid=2247493051&idx=1&sn=ee70907edb0fd6a5fe0543599e6defb5",
+      "source": "白泽安全实验室",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "首破悬置15年挑战：「天问」密码分析智能体，开启「许愿式密码分析」新时代",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwNTczMjAzMg==&mid=2650242346&idx=1&sn=c71679e40b8310fea93abf04aca62401",
+      "source": "纽创信安",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "雷神众测漏洞周报2026.11.16-2026.11.22",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI0NzEwOTM0MA==&mid=2652504037&idx=1&sn=ebf6c4bd93a334e7891d8aabdc592297",
+      "source": "雷神众测",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "随笔",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-23-Random-thoughts.html",
+      "source": "SEISAMUSE",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "随想录IV",
+      "url": "https://www.wsh233.cn/post/随想录iv",
+      "source": "WSH",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "谭晓生：网络安全旧逻辑失效，产业洗牌已经开始",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDE5MDI5Mg==&mid=2247512252&idx=1&sn=3f0533a9154d64bb196c9e5fc4a29efb",
+      "source": "数说安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "诚邀渠道合作伙伴共启新征程",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3NjYzMDM1Mg==&mid=2247539006&idx=2&sn=34727472d40fa8066f7e69d78a31df57",
+      "source": "火绒安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "评论 | 依法严惩侵犯公民个人信息犯罪",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268685&idx=3&sn=6f01c8e166833c69d2da9440271ccd20",
+      "source": "中国信息安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "论文AI率与课堂抬头率：AI该交给谁",
+      "url": "https://lukefan.com/2026/11/23/ai-detection-classroom-monitoring-managerial-power/",
+      "source": "老范讲故事｜AI、大模型与商业世界的故事",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "论坛·原创 | 技术问题不应被政治化、泛安全化",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268685&idx=1&sn=d159c868c1337d16eea22b2cadf5216d",
+      "source": "中国信息安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "英国网络部队指挥官首次公开承认对外国对手实施进攻性网络行动",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI4NDY2MDMwMw==&mid=2247516931&idx=2&sn=1605add1abf1e7177a3e9cdc56ff48f0",
+      "source": "安全内参",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "自部署 Ollama 流式响应包长侧信道攻击实测与缓解方案评估",
+      "url": "https://xz.aliyun.com/news/93435",
+      "source": "先知安全技术社区",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "自部署 Ollama 流式响应包长侧信道攻击实测与缓解方案评估",
+      "url": "https://xz.aliyun.com/news/93435",
+      "source": "先知安全技术社区",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "美国F-22战斗机为何在2026年采购老式存储卡",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxOTM1MDQ1NA==&mid=2451190026&idx=1&sn=1bcf52a1e8a46608a7c04885232dcb70",
+      "source": "黑鸟",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "终结者",
+      "url": "https://zhongxiaojie.cn/post/2465/",
+      "source": "obaby 𝐢‍𝐧⃝ void",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "等了这么久，《燕云十六声》的官方DLSS 5优化有什么不一样",
+      "url": "https://www.yystv.cn/p/14668",
+      "source": "游研社",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "科技云报到：Agent 上生产，七成的账不在模型上",
+      "url": "https://www.anquanke.com/post/id/316523",
+      "source": "安全客-有思想的安全新媒体",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "私有云超融合平台从0到1建设指南：实施要点与避坑清单",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwNTgyODU3NQ==&mid=2651145212&idx=1&sn=3f8418bd85e494032acfb9f2056e5026",
+      "source": "威努特安全网络",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "白宫收缴了从中国返程记者的手机",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE2OTQyNA==&mid=2648959631&idx=1&sn=d58276c3ef3c93e8c16c909cb1b14aff",
+      "source": "全频带阻塞干扰",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "漏洞利用成功率53.5%：GPT-6.2网安能力达Critical，系统卡里藏着三个更危险的信号",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc3NjM4MA==&mid=2651143370&idx=1&sn=3e2da4a9d685ed29b61501f774d85960",
+      "source": "安全牛",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "每日安全动态推送(26/11/23)",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDYyNDI0MA==&mid=2651960594&idx=1&sn=f19b37d1d65cd22d65764f631c575262",
+      "source": "腾讯玄武实验室",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "母亲离世13年后，女儿发现她曾是一位少女同人画家",
+      "url": "https://www.yystv.cn/p/14666",
+      "source": "游研社",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "案例分享 | 交互审计准确率95%，某省级电力公司的AI“体检”不只走过场",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA4MTg0MDQ4Nw==&mid=2247587244&idx=1&sn=4fc836a48cc1e328fe9efe9eae060f20",
+      "source": "360数字安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "极客公园创新大会 2027 全议程公布！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117225&idx=1&sn=6dfc4761e63afc3b13a95723848799d7",
+      "source": "极客公园",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "我从AI安全产品中学到了什么",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3ODAzNjg5OA==&mid=2247485614&idx=1&sn=7730c59ad5eeab01dc44c3967a70fb65",
+      "source": "放之",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "慌啥子嘛",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-23-take-it-easy.html",
+      "source": "SEISAMUSE",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "德国把网络威胁拉到最高档，理由就四个字：智能体 AI",
+      "url": "https://www.anquanke.com/post/id/316536",
+      "source": "安全客-有思想的安全新媒体",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "当 AI 开始解决数学难题，我们还需要怎样的自己？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUyMTUwMzI3Ng==&mid=2247486602&idx=1&sn=a0c968645d6735f55fde10f29100e9bb",
+      "source": "OnionSec",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "已复现！FineReport FVS 模板未授权导入代码执行漏洞",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg5MTc3ODY4Mw==&mid=2247509098&idx=1&sn=0e3a334e8afdd89d06903ad07d5477dd",
+      "source": "微步在线研究响应中心",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "安全419甲方精品采购指南 | 从\"发现漏洞\"到\"判断风险\"：基调听云ASPM的AI研判新范式",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUyMDQ4OTkyMg==&mid=2247556481&idx=1&sn=47d9861042089c281f3b8701f210ba5d",
+      "source": "安全419",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "学得慢就不用学了，吗？",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg5NDY4ODM1MA==&mid=2247486354&idx=1&sn=4a686cc053d6c8c354ee1ba708099407",
+      "source": "吴鲁加",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "如何制作 AI 短剧？Higgsfield + ChatGPT 实战：从剧本到成片全流程",
+      "url": "https://mingnify.com/zh/blog/p/ai-short-drama-workflow/",
+      "source": "明立非|Mingnify的博客",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "大众的 macOS，还是开发者的 macOS？ - 肘子的 Swift 周报 #163",
+      "url": "https://fatbobman.com/zh/weekly/issue-163/",
+      "source": "肘子的 Swift 记事本 ｜ Fatbobman's Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "国际 | 法国发布新计划强化网络安全",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268685&idx=4&sn=ca344d67463c8fb8e4a1c6ae19210bcd",
+      "source": "中国信息安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "国家互联网信息办公室关于公开征求《实施网络安全标识的产品目录（第二批）》及相关实施规则意见的通知",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5OTQ0NzY3Ng==&mid=2247505627&idx=1&sn=02c553eb12787a81c1525bbbe5bc7c80",
+      "source": "信息安全国家工程研究中心",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "动视要专门收集玩家语录，来训练AI喷人？",
+      "url": "https://www.yystv.cn/p/14667",
+      "source": "游研社",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "剪映的开源平替来了，支持AI指令剪辑，超流畅！",
+      "url": "https://www.ccgxk.com/emlog_dev/946.html",
+      "source": "独元殇 Web 出海  ⭐️",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117129&idx=1&sn=a8f7d2ab2cb71f6bd7c460c72c3ca835",
+      "source": "极客公园",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "关注 | 虎扑、懂球帝……工信部通报23款侵害用户权益行为APP及SDK",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268685&idx=2&sn=3e636d38abf8efc5db4026d70b5852fa",
+      "source": "中国信息安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "全部系列索引",
+      "url": "https://quant67.com/post/series/index.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "全球第九的超算被黑，丢的是 4224 把 SSH 私钥",
+      "url": "https://www.anquanke.com/post/id/316533",
+      "source": "安全客-有思想的安全新媒体",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "全球第九的超算被黑，丢的是 4224 把 SSH 私钥",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5ODA0NDE2MA==&mid=2649790860&idx=1&sn=7439910e1832c12dbfc98438a80759ec",
+      "source": "安全客",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "假外挂真窃密丨借《逃离塔科夫》Loader投放的反射注入木马分析",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3NjYzMDM1Mg==&mid=2247539006&idx=1&sn=c6c9fbcaeaf2490de4feac11cbee2580",
+      "source": "火绒安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "俄军舰为何沉没在非洲？开源调查俄罗斯“墨丘利”号轻型护卫舰遇袭事件",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3Mjc1MTkwOA==&mid=2650570199&idx=1&sn=1146d817ee1d84d9e7fd5be0923b292f",
+      "source": "情报分析师",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "你的技术修炼到什么境界了？看雪社区全新会员等级成长体系2026版正式上线！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624444&idx=1&sn=be9d0ff2751898d436da2b4f61e3474f",
+      "source": "看雪学苑",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "从一个域名开始可以获得哪些信息？",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NDU0ODMxOQ==&mid=2247485876&idx=1&sn=5dc28629a83c563cdc72e51b9151f53b",
+      "source": "RapidDNS",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "人物专访 | 关保联盟秘书长黄一玲对话子芽：面对智能体的动态风险，企业该如何构建AI原生安全治理体系",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3NzE2ODk1Mg==&mid=2647801546&idx=1&sn=982a508c43049c05c44845cf7b5c164e",
+      "source": "悬镜安全",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "二级回收，将成为争夺下一代太空经济入场券的「新风向标」",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117129&idx=2&sn=4f6203b9f3498819a8fb90804f6e9c43",
+      "source": "极客公园",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "两次售后，几番折腾",
+      "url": "https://www.skyue.com/26112323.html",
+      "source": "拾月的博客",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "三种学习",
+      "url": "https://blog.est.im/2026/stderr-32",
+      "source": "est の 输入 输出和出入",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "一种看待关系的角度",
+      "url": "https://www.wsh233.cn/post/一种看待关系的角度",
+      "source": "WSH",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "一人团队花五年时间做了款末日题材独游，终于把首尔「毁灭」了",
+      "url": "https://www.yystv.cn/p/14665",
+      "source": "游研社",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【开源报告】美国情报高级研究计划署（IARPA）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2MTE0NTE3Mw==&mid=2651158093&idx=1&sn=0d3e91ac1d1a4cf447c2fb1a68094ecf",
+      "source": "丁爸 情报分析师的工具箱",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【安全圈】英伟达热修复驱动翻车：闲置9小时仍偷写36GB日志",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080032&idx=1&sn=763967cc27dfc41b9938316226fa2d69",
+      "source": "安全圈",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【安全圈】CISA紧急预警：VMware与Cisco等四枚高危遭在野利用",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080032&idx=3&sn=cd19a06b8fed5919a4de9fec4b756e3a",
+      "source": "安全圈",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【安全圈】AI Agent自主挖掘零日漏洞：11分钟拿下医疗服务器",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080032&idx=2&sn=0979762f073753e029a45dc071f89129",
+      "source": "安全圈",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【MySQL InnoDB 内核】Undo Log 与事务回滚",
+      "url": "https://quant67.com/post/db/mysql-innodb/05-undo-log/05-undo-log.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【MySQL InnoDB 内核】Redo Log 内部机制：LSN、mtr 与组提交",
+      "url": "https://quant67.com/post/db/mysql-innodb/04-redo-log/04-redo-log.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【MySQL InnoDB 内核】Doublewrite 与页完整性：撕裂页、两阶段刷盘与原子写边界",
+      "url": "https://quant67.com/post/db/mysql-innodb/06-doublewrite/06-doublewrite.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】13｜Harness 架构选型与减法原则：何时写 300 行循环，何时上框架与持久化引擎",
+      "url": "https://quant67.com/post/agent-harness/13-harness-architecture-selection/13-harness-architecture-selection.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】12｜Agent 运行时排障五轴与确定性回放手册",
+      "url": "https://quant67.com/post/agent-harness/12-trace-debugging-and-failure-playbook/12-trace-debugging-and-failure-playbook.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】11｜Agent 评测工程与可靠性数学：从 SWE-bench 到 pass^k",
+      "url": "https://quant67.com/post/agent-harness/11-agent-evals-and-reliability-math/11-agent-evals-and-reliability-math.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】10｜多 Agent 编排拓扑、A2A 协议与 MAST 失效分类学",
+      "url": "https://quant67.com/post/agent-harness/10-multi-agent-coordination-and-failure-modes/10-multi-agent-coordination-and-failure-modes.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】09｜运行时权限门禁与人机协同状态机：沙箱与身份之间的最后一米",
+      "url": "https://quant67.com/post/agent-harness/09-permissions-and-hitl-runtime/09-permissions-and-hitl-runtime.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】08｜持久化执行、检查点与确定性重放：Temporal、Restate 与 LangGraph",
+      "url": "https://quant67.com/post/agent-harness/08-durable-execution-and-replay/08-durable-execution-and-replay.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】07｜Agent 记忆系统：分层存储、双时态知识图谱与遗忘一致性",
+      "url": "https://quant67.com/post/agent-harness/07-memory-architecture-and-forgetting/07-memory-architecture-and-forgetting.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】06｜工具表面工程、渐进披露与协议演进：MCP、CodeAct 与受限解码",
+      "url": "https://quant67.com/post/agent-harness/06-tool-surface-and-protocol-boundaries/06-tool-surface-and-protocol-boundaries.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】05｜Agentic 检索与代码库导航：文件系统、Tree-sitter Repo Map 与 LSP",
+      "url": "https://quant67.com/post/agent-harness/05-agentic-retrieval-and-code-nav/05-agentic-retrieval-and-code-nav.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】04｜KV Cache 前缀稳定性与 Prompt Caching 经济学",
+      "url": "https://quant67.com/post/agent-harness/04-kv-prefix-economics/04-kv-prefix-economics.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】03｜Context Engineering 与 Context Rot：长轨迹为何会「越喂越蠢」",
+      "url": "https://quant67.com/post/agent-harness/03-context-rot-and-attention-budget/03-context-rot-and-attention-budget.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】02｜主执行循环与 ACI 设计：从 ReAct、Reflexion 到长程交接班",
+      "url": "https://quant67.com/post/agent-harness/02-agent-loop-and-aci/02-agent-loop-and-aci.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "【Agent Harness】01｜Agent Harness 全景：模型之上、框架之下的运行时内核",
+      "url": "https://quant67.com/post/agent-harness/01-harness-overview/01-harness-overview.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "《黑神话：悟空》携手《影之刃零》集结星图嘉年华！11月24日正式开票",
+      "url": "https://www.yystv.cn/p/14663",
+      "source": "游研社",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "《孤独摇滚》的艺术墙圣地可能在不久的将来要看不到了呢",
+      "url": "https://www.wikimoe.com/post/t-toyl2hte",
+      "source": "维基萌",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "《八仙！》你怎么看？",
+      "url": "https://www.suiyan.cc/blog/20261123090953",
+      "source": "碎言",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "zapret",
+      "url": "https://kitploit.com/en/tools/github/bol-van/zapret",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "zapret",
+      "url": "https://kitploit.com/en/tools/github/bol-van/zapret",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "system_prompts_leaks — Updated!",
+      "url": "https://kitploit.com/en/posts/system_prompts_leaks-21e49e8bd9e0ab40",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "system_prompts_leaks — Updated!",
+      "url": "https://kitploit.com/en/posts/system_prompts_leaks-21e49e8bd9e0ab40",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "rustdesk — Updated!",
+      "url": "https://kitploit.com/en/posts/rustdesk-cdf27d0fc183ef04",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "rustdesk — Updated!",
+      "url": "https://kitploit.com/en/posts/rustdesk-cdf27d0fc183ef04",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+      "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "libreOSINT",
+      "url": "https://kitploit.com/en/tools/github/cyberkristaps/libreosint",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "libreOSINT",
+      "url": "https://kitploit.com/en/tools/github/cyberkristaps/libreosint",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "hermes-agent canary.20261123T065600Z-v0.23.3",
+      "url": "https://kitploit.com/en/posts/hermes-agent-d0612a48be021a94",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "hermes-agent canary.20261123T065600Z-v0.23.3",
+      "url": "https://kitploit.com/en/posts/hermes-agent-d0612a48be021a94",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "epistemic-guard",
+      "url": "https://kitploit.com/en/tools/github/alienatedaliens/epistemic-guard",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "epistemic-guard",
+      "url": "https://kitploit.com/en/tools/github/alienatedaliens/epistemic-guard",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "delegated-scope-violation",
+      "url": "https://kitploit.com/en/tools/github/shrave/delegated-scope-violation",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "delegated-scope-violation",
+      "url": "https://kitploit.com/en/tools/github/shrave/delegated-scope-violation",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "[安全周报] 大写为httpS会静默关掉 TLS | nginx、PHP、WordPress 等高危漏洞需紧急修复 | 蜜罐捕获1000黑名单",
+      "url": "https://www.paddysun.top/archives/5680",
+      "source": "Under the Sun with Paddy",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Windows11经典开始菜单——StartAllBack(StartIsBack++) v3.9.29学习版",
+      "url": "https://masuit.net/1751",
+      "source": "懒得勤快的博客_互联网分享精神",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
+      "url": "https://projectzero.google/2026/11/virtualbox-process-hardening.html",
+      "source": "Project Zero",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Upgrade to Qualys’ Learning Management System (LMS)",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Security Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Update Mon Nov 23 15:41:04 UTC 2026",
+      "url": "https://github.com/trickest/cve/commit/aa41c036564c54126595df53aeca64d5120e1e8a",
+      "source": "Recent Commits to cve:main",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "The vulnerability management commons dilemma, top security categories in Q4, & news - Jeremiah Grossman - ESW #486",
+      "url": "http://sites.libsyn.com/18678/the-vulnerability-management-commons-dilemma-top-security-categories-in-q4-news-jeremiah-grossman-esw-486",
+      "source": "Security Weekly Podcast Network (Audio)",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "The future of private browsing...according to Tor users!",
+      "url": "https://blog.torproject.org/the-future-of-private-browsing/",
+      "source": "Tor Project blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "The Access Layer Is the Attack Surface: 2,474 Exposed Industrial Serial Gateways, and Why 77% of Them Have Authentication Switched Off",
+      "url": "https://flare.io/learn/resources/blog/exposed-industrial-serial-gateways",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "TPCTF 2026 落幕：当人类与 AI 同台，谁在定义下一代安全攻防？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NDU3MjExNw==&mid=2247516706&idx=1&sn=3573bafd6eb6f53937f1a8062c281ca1",
+      "source": "XCTF联赛",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Spain Stops NoName057(16) From Getting a Physical Foothold",
+      "url": "https://securityaffairs.com/203756/hacktivism/spain-stops-noname05716-from-getting-a-physical-foothold.html",
+      "source": "Security Affairs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "SonicWall：因AI攻击风险，将不再修复 Gen 6 防火墙漏洞",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2NTg4OTc5Nw==&mid=2247527801&idx=2&sn=445f90ed290803183aa6a74d8ada6a0d",
+      "source": "代码卫士",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "SoftEtherVPN v5.2.5191",
+      "url": "https://kitploit.com/en/posts/softethervpn-3b615bd9160f1e8f",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "SoftEtherVPN v5.2.5191",
+      "url": "https://kitploit.com/en/posts/softethervpn-3b615bd9160f1e8f",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Signal blocks screenshots by Apple, Google operating systems to protect data from AI agents",
+      "url": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "PortSwigger lab: Password Brute-Force via Password Change",
+      "url": "https://infosecwriteups.com/portswigger-lab-password-brute-force-via-password-change-cb0666075eaa?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Pentest-Swarm-AI",
+      "url": "https://kitploit.com/en/tools/github/armur-ai/pentest-swarm-ai",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Pentest-Swarm-AI",
+      "url": "https://kitploit.com/en/tools/github/armur-ai/pentest-swarm-ai",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Pentagon Tech Chief Kirsten Davies Picked to Lead White House Cyber Office",
+      "url": "https://thecyberexpress.com/national-cyber-director-names-kirsten-davies/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "P vs NP and encryption: what the AI claims change",
+      "url": "https://ransomnews.com/p-vs-np-encryption-ai-claims-2026/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117110&idx=1&sn=b82766aae434e3989a4d67b880a3b16d",
+      "source": "极客公园",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "OpenAI GPT-6.2 Astra挖出多个0Day：权限绕过、远程代码执行全部涉及",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624444&idx=3&sn=7ec4d0204cc2cc1cd4c114162ef68c34",
+      "source": "看雪学苑",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "OXLoader abuses DLL hijacking to distribute different malware families",
+      "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
+      "source": "Malwarebytes",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Norway says hackers exploited Microsoft security flaw to attack energy firms Equinor, Skagerak Energi",
+      "url": "https://therecord.media/norway-microsoft-cyberattack-equinor",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "No Sleep, No Breaks, No Human Help. Amazon Watched AI Agents Hack a Server",
+      "url": "https://thecyberexpress.com/autonomous-ai-agents-found-amazon-says/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
+      "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Muse AI got nosy and started making things up, Meta insiders say",
+      "url": "https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say",
+      "source": "Malwarebytes",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Microsoft Entra Connect Health breach: what leaked",
+      "url": "https://ransomnews.com/entra-connect-health-breach-2026/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Microsoft Entra Connect Health Breach Exposes Tenant Metadata and Admin Details",
+      "url": "https://securityaffairs.com/203820/data-breach/microsoft-entra-connect-health-breach-exposes-tenant-metadata-and-admin-details.html",
+      "source": "Security Affairs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "LiteLLM 1.107.0 Supply Chain Attack: How to Secure AI Gateways Beyond Code Signatures",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Security Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Iran threat intelligence update: Radiological and chemical attack reporting 11.23.26",
+      "url": "https://krypt3ia.wordpress.com/2026/11/23/iran-threat-intelligence-update-radiological-and-chemical-attack-reporting-11-23-26/",
+      "source": "Krypt3ia",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
+      "url": "https://isc.sans.edu/diary/rss/33548",
+      "source": "SANS Internet Storm Center, InfoCON: green",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Hypervisor : Intel VT 平台 DMA和VT-D对抗",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624444&idx=2&sn=94cce2b0e1143562892e1c4398fe7766",
+      "source": "看雪学苑",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Humans Have Rights. Machines Do Not.",
+      "url": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
+      "source": "Schneier on Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "How we cleared our backlog with SonarQube Remediation Agent",
+      "url": "https://www.sonarsource.com/blog/how-we-cleared-our-backlog-with-sonarqube-remediation-agent/",
+      "source": "Sonar Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "How Lean decides a proof is correct / Lean 如何判断证明是对的 (1)",
+      "url": "https://blog.lushuyu.site/632.html",
+      "source": "Lu Shuyu's NoteBook",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Holiday Lures, Real Threats: 5 Thanksgiving and Black Friday Campaigns from 2026",
+      "url": "https://any.run/cybersecurity-blog/thanksgiving-black-friday-cyber-threats-2026/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Holehe tutorial: check where an email is registered",
+      "url": "https://ransomnews.com/holehe-tutorial-email-osint-2026/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Here's Why Data Breach Disclosure is so Hard: Lessons from Hundreds of Emails with Hacked Companies",
+      "url": "https://www.troyhunt.com/heres-why-data-breach-disclosure-is-so-hard-lessons-from-hundreds-of-emails-with-hacked-companies/",
+      "source": "Troy Hunt's Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Hackers breach Austrian Foreign Ministry website, access diplomats' contact details",
+      "url": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "HackTrack_OSAI_W01_Announcement_1920x1080_with bg music_1_v2",
+      "url": "https://vimeo.com/1249310190",
+      "source": "Vimeo / OffSec’s videos",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "HackTrack Hero Ad v3",
+      "url": "https://vimeo.com/1249310204",
+      "source": "Vimeo / OffSec’s videos",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+      "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "GitHub 热门项目周刊 · 第 38 期 · 2026 年第 48 周",
+      "url": "https://www.dqzboy.com/20445.html",
+      "source": "浅时光博客",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Ghidra – Install, Analyse and Decompile with NSA’s Reverse Engineering Suite",
+      "url": "https://www.darknet.org.uk/2026/11/ghidra-nsa-reverse-engineering-decompiler/",
+      "source": "Darknet.org.uk",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Ghidra – Install, Analyse and Decompile with NSA’s Reverse Engineering Suite",
+      "url": "https://www.darknet.org.uk/2026/11/ghidra-nsa-reverse-engineering-decompiler/",
+      "source": "Darknet.org.uk",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+      "url": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "From a Cracked CEO Credential to a Potential Ransomware Path",
+      "url": "https://horizon3.ai/downloads/use-case/cracked-ceo-credential-ransomware-path/",
+      "source": "Horizon3",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Fragments 0x0026",
+      "url": "https://lenciel.com/2026/11/fragments-0x0026/",
+      "source": "@Lenciel",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Forum ICT Security 2026, com’è andata la 24ª Edizione",
+      "url": "https://www.ictsecuritymagazine.com/notizie/forum-ict-security-2026-24a/",
+      "source": "ICT Security Magazine",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "FBI史诗级数据泄露：全球通缉数据库疑遭窃取",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI4NDY2MDMwMw==&mid=2247516931&idx=1&sn=404d25d01211b1ccb7ec8ab1b35d43d2",
+      "source": "安全内参",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "FBI reportedly facing second data breach involving National Crime Information Center",
+      "url": "https://therecord.media/fbi-cyberattack-data-breach",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "FBI crime database reportedly hacked",
+      "url": "https://www.malwarebytes.com/blog/data-breaches/2026/11/fbi-crime-database-reportedly-hacked",
+      "source": "Malwarebytes",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "FBI WARNING | ARTEX被美FBI列为重点威胁",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA0NjI5MQ==&mid=2650188719&idx=1&sn=37c58a1384fd59e11d32af6361afb7ab",
+      "source": "微步在线",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "F5紧急修复多个严重的 BIG-IP RCE 漏洞",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2NTg4OTc5Nw==&mid=2247527801&idx=1&sn=23bfb7c301a06f1b257852ad186ba983",
+      "source": "代码卫士",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Exploiting Broken Brute-Force Protection with Multiple Credentials per Request",
+      "url": "https://infosecwriteups.com/exploiting-broken-brute-force-protection-with-multiple-credentials-per-request-6bf33d5d9c5f?source=rss----7b722bfd1b8d---4",
+      "source": "InfoSec Write-ups - Medium",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "DeepfakeBench-MM",
+      "url": "https://kitploit.com/en/tools/github/sclbd/deepfakebench-mm",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "DeepfakeBench-MM",
+      "url": "https://kitploit.com/en/tools/github/sclbd/deepfakebench-mm",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "DataCon2026高分秘籍-GEO赛道出题人的肺腑之言！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5Njg1NzMyNw==&mid=2247489750&idx=1&sn=a587f0890a005cff19431ed3579768f4",
+      "source": "DataCon大数据安全分析竞赛",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "DailySafe",
+      "url": "https://kitploit.com/en/tools/github/xuankunrong/dailysafe",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "DailySafe",
+      "url": "https://kitploit.com/en/tools/github/xuankunrong/dailysafe",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "CyberStrikeAI — Updated!",
+      "url": "https://kitploit.com/en/posts/cyberstrikeai-844aa3a888d2101d",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "CyberStrikeAI — Updated!",
+      "url": "https://kitploit.com/en/posts/cyberstrikeai-844aa3a888d2101d",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "CrowdStrike to purchase Zscaler for $43.9 billion",
+      "url": "https://therecord.media/crowdstrike-zscaler",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Cleverbridge Confirms Attackers Copied Payment Card Data From Its Platform",
+      "url": "https://securityaffairs.com/203851/data-breach/cleverbridge-confirms-attackers-copied-payment-card-data-from-its-platform.html",
+      "source": "Security Affairs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Call for Interpreters: Translate 40C3!",
+      "url": "https://events.ccc.de/2026/11/23/40c3-call-for-interpreters/",
+      "source": "CCC Event Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+      "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Bulgaria Discovers Massive Government Breach After Five Years of Undetected Spying",
+      "url": "https://securityaffairs.com/203794/intelligence/bulgaria-discovers-massive-government-breach-after-five-years-of-undetected-spying.html",
+      "source": "Security Affairs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Building Resilience Against the AI Security Triple Threat",
+      "url": "https://www.guidepointsecurity.com/blog/building-resilience-against-the-ai-security-triple-threat/",
+      "source": "GuidePoint Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Bromcom - 355,051 breached accounts",
+      "url": "https://haveibeenpwned.com/Breach/Bromcom",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Bromcom - 355,051 breached accounts",
+      "url": "https://haveibeenpwned.com/Breach/Bromcom",
+      "source": "Have I Been Pwned latest breaches",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Black Friday, red flags: too-good-to-be-true deals hiding real threats",
+      "url": "https://securelist.com/black-friday-threat-report-2026/122061/",
+      "source": "Securelist",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Black Friday, red flags: too-good-to-be-true deals hiding real threats",
+      "url": "https://securelist.com/black-friday-threat-report-2026/122061/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Beyond Live Triage: Analyzing Disk Images, VMs, and Mobile TAR Extractions",
+      "url": "https://blog.elcomsoft.com/2026/11/beyond-live-triage-analyzing-disk-images-vms-and-mobile-tar-extractions/",
+      "source": "ElcomSoft blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+      "url": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "BADBOX 3.0 Exposed: Massive Botnet Hides Ad Fraud Inside Android TV Boxes",
+      "url": "https://securityaffairs.com/203767/malware/badbox-3-0-exposed-massive-botnet-hides-ad-fraud-inside-android-tv-boxes.html",
+      "source": "Security Affairs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+      "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Anthropic上市：谁先赚钱，谁来付账",
+      "url": "https://lukefan.com/2026/11/23/anthropic-ipo-winners-and-compute-bills/",
+      "source": "老范讲故事｜AI、大模型与商业世界的故事",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Al Brooks 问答笔记：练出稳定盈利到底要多久？",
+      "url": "https://blog.forecho.com/al-brooks-how-long-to-become-profitable.html",
+      "source": "forecho's Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Al Brooks 交易室笔记：Mike Precog 的多周期逻辑、资金管理与学习方法",
+      "url": "https://blog.forecho.com/mike-precog-trading-room-notes.html",
+      "source": "forecho's Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Agent Harness 与 Context Engineering",
+      "url": "https://quant67.com/post/agent-harness/index.html",
+      "source": "土法炼钢 · 系统与基础设施",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "Adversary Emulation of a state-backed APT (CL-STA-1020) with Serverless Functions",
+      "url": "https://secjuice.com/adversary-emulation-of-a-state-backed-apt-cl-sta-1020-with-serverless-functions/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ARTEX leads to persistent ZQAgent backdoor",
+      "url": "https://blog.nviso.eu/2026/11/23/artex-fog0003-zqagent-backdoor/",
+      "source": "NVISO Labs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ARTEX leads to persistent ZQAgent backdoor",
+      "url": "https://blog.nviso.eu/2026/11/23/artex-fog0003-zqagent-backdoor/",
+      "source": "NVISO Labs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ARTEX führt zu einer dauerhaften ZQAgent-Backdoor",
+      "url": "https://blog.nviso.eu/2026/11/23/https-blog-nviso-eu-2026-11-20-artex-fog0003-zqagent-backdoor-de/",
+      "source": "NVISO Labs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ARTEX führt zu einer dauerhaften ZQAgent-Backdoor",
+      "url": "https://blog.nviso.eu/2026/11/23/https-blog-nviso-eu-2026-11-20-artex-fog0003-zqagent-backdoor-de/",
+      "source": "NVISO Labs",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "ARTEX Is Changing the Economics of Attack. Defenders Must Change the Economics of Validation.",
+      "url": "https://horizon3.ai/intelligence/blogs/artex-economics-of-attack-validation/",
+      "source": "Horizon3",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI打AI防：初赛第一之后，sapper-v2 在智能攻防挑战赛决赛遇到了什么？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU3ODAyMjg4OQ==&mid=2247498156&idx=1&sn=c8da0854e05f3f248e6681973514e5be",
+      "source": "云鼎实验室",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI安全专题周报（20261120）",
+      "url": "https://blog.netlab.360.com/aian-quan-zhuan-ti-zhou-bao-20261120/",
+      "source": "360 Netlab Blog - Network Security Research Lab at 360",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "source": "The Hacker News",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI 时代，中台软件的大败退",
+      "url": "https://zxs.io/article/2239",
+      "source": "XINDOO",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI SOC 如何走向自主化？从辅助分析到自动处置的五级演进路径",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkxNzA3MTgyNg==&mid=2247544620&idx=1&sn=98003a9031f8044af07be9142beece56",
+      "source": "数世咨询",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI Penetration Testing Frameworks Are Becoming Tools for Cybercriminals",
+      "url": "https://flashpoint.io/blog/ai-penetration-testing-frameworks-are-becoming-tools-for-cybercriminals/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+      "url": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+      "source": "SecurityWeek",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "AI Agents Are Creating a Shared Responsibility Gap",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "A week in security (November 16 – November 22)",
+      "url": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22",
+      "source": "Malwarebytes",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "A Deep Dive into Underground AI-Powered Pentesting Tools and Testing Their Usability",
+      "url": "https://flare.io/learn/resources/blog/ai-powered-pentesting-tools",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "40C3: Hackertours",
+      "url": "https://events.ccc.de/2026/11/23/40c3-hackertours/",
+      "source": "CCC Event Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "2027年的新数字来了：税档、标准抵扣、HSA、401(k)，一篇看完",
+      "url": "https://chattymoney.com/2027-tax-brackets-401k-limits/",
+      "source": "ChattyMoney｜跟我一起来谈钱",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "2026 年我的常用 Mac 软件",
+      "url": "https://tw93.fun/2026-11-23/mac-apps.html",
+      "source": "Tw93 Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "2026 OSGJ 日志一：〈滚幕〉",
+      "url": "https://xingwangzhe.fun/posts/osgj-devlog-1-credits/",
+      "source": "姓王者的博客",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "2025年度北京市科学技术奖获奖名单（网络空间安全领域）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5MTM5MTQ2MA==&mid=2247496205&idx=1&sn=3c9915e0e58b42e2b880bbf5d8f67b7d",
+      "source": "安全学术圈",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "2025 PISA 和 科举",
+      "url": "https://blog.est.im/2026/stderr-31",
+      "source": "est の 输入 输出和出入",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "1,615 New TLDs Are Coming. Is Your DNS Ready for a Bigger Namespace?",
+      "url": "https://www.akamai.com/blog/security/2026/nov/1615-new-tlds-dns-ready-for-bigger-namespace",
+      "source": "Blog",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
+    {
+      "title": "'Overwhelming' support leads Trump to lock in Davies for national cyber czar",
+      "url": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
+      "source": "Over Security",
+      "date": "2026-11-24",
+      "page": "2026/2026-11-24.html"
+    },
     {
       "title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
       "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653116938&idx=1&sn=7fe7f91d43bbb5ac2d41b802166748cb",
