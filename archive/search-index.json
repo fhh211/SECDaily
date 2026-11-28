@@ -1,7 +1,1218 @@
 {
-  "updated_at": "2026-11-27 11:21:08",
-  "total": 67230,
+  "updated_at": "2026-11-28 10:52:05",
+  "total": 67403,
   "articles": [
+    {
+      "title": "黑客利用Open Code仅用6分钟就获取到某大型金融公司的网络访问密钥",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI0MTE4ODY3Nw==&mid=2247493056&idx=1&sn=1adda4249b59981357d0fc94e609d3a9",
+      "source": "白泽安全实验室",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "风骚律师s02e08",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-27-better-call-saul-s02e08.html",
+      "source": "SEISAMUSE",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "通知 | 国家数据局就《关于完善数据规则 赋能人工智能创新发展的若干意见（公开征求意见稿）》向社会公开征求意见",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268789&idx=1&sn=29c12dc07bfb41fc9169ed0c281cd7f8",
+      "source": "中国信息安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "说说：#2026-11-27 09:30",
+      "url": "https://www.mmbkz.cn/7cdc65d9.html",
+      "source": "喵喵小站・博客志",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "诚邀渠道合作伙伴共启新征程",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3NjYzMDM1Mg==&mid=2247539076&idx=3&sn=1aa2fea68c73bffe458eba49970f57f1",
+      "source": "火绒安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "评论 | 切断黑色链条，堵住“简历开盒”漏洞",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268789&idx=5&sn=669dd92318a19b913b3ee704e3a25eb3",
+      "source": "中国信息安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "让 SSD 读懂业务优先级——NeoHint 的设计与实践",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524727&idx=1&sn=5fd1623144dd5847582c8391d3dec46d",
+      "source": "字节跳动技术团队",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "行业首发 | OPPO联合发布可信联盟链\"云信链\"：私密计算云（PCC）安全可验证",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUyNzc4Mzk3MQ==&mid=2247495126&idx=1&sn=ac0cd0f8cca95e23faac606624022cc1",
+      "source": "OPPO安全中心",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "美国空军旗舰云平台Cloud One遭入侵",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxOTM1MDQ1NA==&mid=2451190103&idx=2&sn=88f1a8cd3eba5a282d00028bfebd035c",
+      "source": "黑鸟",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "索马里国家情报机构宣布对“青年党”骨干实施空袭，警惕恐怖组织报复性袭击及暴力活动外溢对我在非海外项目、驻外机构和人员安全构成威胁",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3Mjc1MTkwOA==&mid=2650570266&idx=2&sn=e2aec0dee69f0e1a7a3b0ee6cf75bd7c",
+      "source": "情报分析师",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "第一次使用AI + Figma MCP开发网页小结",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/11/ai-figma-mcp/",
+      "source": "张鑫旭-鑫空间-鑫生活",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "科技爱好者周刊（第 421 期）：AI 的疯狂造富",
+      "url": "http://www.ruanyifeng.com/blog/2026/11/weekly-issue-421.html",
+      "source": "阮一峰的网络日志",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "直播预告｜字节跳动 ByteKMP 技术沙龙：从基建优化到业务落地",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524727&idx=2&sn=dc3a3a2e62a255b027ff3b41b17b6f7e",
+      "source": "字节跳动技术团队",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "火绒小问答——「企业版」中心地址管理使用方法",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3NjYzMDM1Mg==&mid=2247539076&idx=1&sn=7b7c6545746b1aebcd14c48195b3d2bb",
+      "source": "火绒安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "每日安全动态推送(26/11/27)",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDYyNDI0MA==&mid=2651960597&idx=1&sn=e8ed34a4bd9d0e59fbb2612936dc7a95",
+      "source": "腾讯玄武实验室",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "每周蓝军技术推送（2026.11.21-11.27）",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMTI0NjA3OA==&mid=2247495755&idx=1&sn=020593dfb862e75e91e95cf0d415836b",
+      "source": "M01N Team",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "每周勒索威胁摘要",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5Mzg5MDM3NQ==&mid=2247498663&idx=1&sn=1da08ab8af235fc77ca96ce93a1b9910",
+      "source": "奇安信病毒响应中心",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "核原料矿因网络攻击停产，上市公司紧急停牌",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI4NDY2MDMwMw==&mid=2247516960&idx=1&sn=1569792d3a3eee8f72bcdc93324f4834",
+      "source": "安全内参",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "本周五求职专栏！高薪岗位更新汇总",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624654&idx=2&sn=7c6139f5da15c9a39c90bf3213cd6dec",
+      "source": "看雪学苑",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "智谱辟谣 GLM-5.5 延期；特斯拉和 SpaceX 冲刺年底合并；18 家平台完成算法协商，覆盖 2500 万新就业形态劳动者｜极客早知道",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117509&idx=1&sn=b26a9ef2a807975c2f2a93b4a45884b4",
+      "source": "极客公园",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "日本为什么要给菲律宾送雷达和无人机？南海正在形成怎样的监视网络？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3Mjc1MTkwOA==&mid=2650570266&idx=1&sn=c2babc7b297238d8be22ff81e0db79ef",
+      "source": "情报分析师",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "无需反汇编器，AI或已具备读懂机器码的能力",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI4NDY2MDMwMw==&mid=2247516960&idx=2&sn=4b787e1f470dd3b3cd01817458572795",
+      "source": "安全内参",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "搜个DeepSeek微信没了，高仿官网正在批量投毒",
+      "url": "https://www.anquanke.com/post/id/316565",
+      "source": "安全客-有思想的安全新媒体",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "搜个DeepSeek微信没了，高仿官网正在批量投毒",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5ODA0NDE2MA==&mid=2649790963&idx=1&sn=99d16643afb886f536ae5c4ff27031a1",
+      "source": "安全客",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "我的读书笔记：坚持每天做正确的事",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3Njk2OTIzOQ==&mid=2247488299&idx=1&sn=e275932d2e1ac22e662c7e5c3c948ab3",
+      "source": "我的安全视界观",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "我理解的企业 AI Infra",
+      "url": "https://wener.me/story/my-understanding-of-aiinfra",
+      "source": "Wener Live & Life · 故事",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "我把日程、订位和降价提醒，都交给了一颗豆子",
+      "url": "https://dusays.com/posts/900/",
+      "source": "杜老师说",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "开始、取消、停止撞在一起时：Gecko 的录制会话管理",
+      "url": "https://liudon.com/posts/gecko-recording-session-management/",
+      "source": "序 on 流动",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "安全热点周报：Drupal Fail2Install 漏洞利用详情曝光，严重 RCE 漏洞面临活跃利用",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5NDgxODU1MQ==&mid=2247508295&idx=2&sn=7868eaa494d2eb316101811623bd784f",
+      "source": "奇安信 CERT",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "如何做一个混蛋",
+      "url": "https://mianao.info/diy-mix-egg/",
+      "source": "不吐不快",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "大厂的应届生名额，正在先让给 AI 预算",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117520&idx=1&sn=e319ff57dd51d56203a28dd60e582a91",
+      "source": "极客公园",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "土地与人口",
+      "url": "https://www.wsh233.cn/post/土地与人口",
+      "source": "WSH",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "同一句“召回”：骗子用它骗走27万，车企用它召回283万辆",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc3NjM4MA==&mid=2651143412&idx=1&sn=e6e6b343a5b5460a5d0a6cdae3bffc4a",
+      "source": "安全牛",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "关注 | 国家数据局组织实施数字经济发展“十五五”行动计划",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268789&idx=4&sn=12c6a77abd29d699c717274664e4419b",
+      "source": "中国信息安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "关注 | 国家数据局组织实施数字社会发展“十五五”行动计划",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268789&idx=3&sn=a1283c3bee7520e072a255d56f605771",
+      "source": "中国信息安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "偷窥者",
+      "url": "https://zhongxiaojie.cn/post/2510/",
+      "source": "obaby 𝐢‍𝐧⃝ void",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "仓颉热路径上，五笔悄悄吃掉性能的开销",
+      "url": "https://ystyle.top/2026/11/27/cangjie-hot-path-costs/",
+      "source": "东方星痕",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "从零开发 Telegram Bot：创建机器人、调用接口与接收消息",
+      "url": "https://qq52o.me/2863.html",
+      "source": "沈唁志",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "从会话泄露到ARP投毒：DIVD入侵事件Agentic攻击链复盘",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2MDc2MDA4OA==&mid=2247521585&idx=1&sn=2b7d214b61b5d5ec69078ae282f81bf1",
+      "source": "奇安信威胁情报中心",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "云上AI随便打，但检测第一步就卡住了？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA0NjI5MQ==&mid=2650188786&idx=1&sn=a62a2356d96747b431669cab7158759a",
+      "source": "微步在线",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "中央网信办网络综合治理局：全面提升网络生态治理效能 推动网络强国建设开创新局面",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5MzE5MDAzOA==&mid=2664268789&idx=2&sn=f2d14ce77d25f739f64fbb7cb3cdd43c",
+      "source": "中国信息安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "三部门部署新一代通信网建设！划出工业网络、AI与安全新重点",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwNTgyODU3NQ==&mid=2651145307&idx=1&sn=28fd78e2f76eaacd15bc361e20fa3aa8",
+      "source": "威努特安全网络",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "三美元接管美国财政部子域名：EIP悬挂DNS实测",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxOTM1MDQ1NA==&mid=2451190103&idx=1&sn=5442d397875d7a5bc50ebc198ab73e3f",
+      "source": "黑鸟",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "一条模型调用和一个 Agent 之间，差六块",
+      "url": "https://ystyle.top/2026/11/27/cangjie-agent-ecosystem/",
+      "source": "东方星痕",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【火绒安全周报】三星确认第三方数据泄露/美国中情局疑遭网络入侵",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3NjYzMDM1Mg==&mid=2247539076&idx=2&sn=9a146c0b30d91a44c8d512ed07518974",
+      "source": "火绒安全",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【漏洞通告】Linux内核NFS越界写入漏洞（CVE-2026-99362）",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MjE3ODkxNg==&mid=2247494345&idx=1&sn=b554a329de0ef9c022e6e8cc7392d4d4",
+      "source": "绿盟科技CERT",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【漏洞通告】Cacti远程代码执行漏洞（4http2shell）",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MjE3ODkxNg==&mid=2247494345&idx=2&sn=af749b2d53a53c28ab268b1425be5f53",
+      "source": "绿盟科技CERT",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【已复现】Cacti 未授权远程代码执行漏洞(QVD-2026-117631)安全风险通告",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5NDgxODU1MQ==&mid=2247508295&idx=1&sn=7dd007931f4c6a435e8cec4ddc731116",
+      "source": "奇安信 CERT",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【安全圈】香港接连发生大规模数据泄露：健身售票等十余机构遭入侵",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080078&idx=1&sn=74657d60bdc2c50b1e559ea7d9cc874f",
+      "source": "安全圈",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【安全圈】Linux内核曝12年老漏洞：NFS2ROOT允许远程提权Root",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080078&idx=2&sn=34f5dff3800adc37817a255f0e87851d",
+      "source": "安全圈",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "【安全圈】Cacti在野0-day遭公开：仅需4次HTTP请求即可远程RCE",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMzE4NDU1OQ==&mid=2652080078&idx=3&sn=eda2b9b2a61749313ce2612c6a945ced",
+      "source": "安全圈",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "worse_finder",
+      "url": "https://kitploit.com/en/tools/github/melvinsh/worse_finder",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "worse_finder",
+      "url": "https://kitploit.com/en/tools/github/melvinsh/worse_finder",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "who-are-you",
+      "url": "https://kitploit.com/en/tools/github/yt1988/who-are-you",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "who-are-you",
+      "url": "https://kitploit.com/en/tools/github/yt1988/who-are-you",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "pCloud confirms password manager hack after suspicious login alerts",
+      "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "osint_stuff_tool_collection — Updated!",
+      "url": "https://kitploit.com/en/posts/osint_stuff_tool_collection-c5141775d6026880",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "osint_stuff_tool_collection — Updated!",
+      "url": "https://kitploit.com/en/posts/osint_stuff_tool_collection-c5141775d6026880",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "nuclei-templates v10.5.3",
+      "url": "https://kitploit.com/en/posts/nuclei-templates-07bf185595db6f41",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "nuclei-templates v10.5.3",
+      "url": "https://kitploit.com/en/posts/nuclei-templates-07bf185595db6f41",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "netbird v0.84.0",
+      "url": "https://kitploit.com/en/posts/netbird-bf4d1337c4da9b3a",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "netbird v0.84.0",
+      "url": "https://kitploit.com/en/posts/netbird-bf4d1337c4da9b3a",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "narf",
+      "url": "https://kitploit.com/en/tools/github/hodgesds/narf",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "narf",
+      "url": "https://kitploit.com/en/tools/github/hodgesds/narf",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "iOS Forensic Toolkit 10.14: app data extraction for iOS 27 and the iPhone 18 range",
+      "url": "https://blog.elcomsoft.com/2026/11/ios-forensic-toolkit-10-14-app-data-extraction-for-ios-27-and-the-iphone-18-range/",
+      "source": "ElcomSoft blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "headscale v0.29.8",
+      "url": "https://kitploit.com/en/posts/headscale-ef52185f80635b63",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "headscale v0.29.8",
+      "url": "https://kitploit.com/en/posts/headscale-ef52185f80635b63",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "clinic-1.0-Patrick-Mvuma SQLi - multiple",
+      "url": "https://cxsecurity.com/issue/WLB-2026110006",
+      "source": "CXSECURITY Database RSS Feed - CXSecurity.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "brave-browser v1.102.44",
+      "url": "https://kitploit.com/en/posts/brave-browser-9691de38676969ff",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "brave-browser v1.102.44",
+      "url": "https://kitploit.com/en/posts/brave-browser-9691de38676969ff",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+      "url": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Windows Defender (MpEngine) - Arbitrary File Drop / Privilege Abuse via Symlink Racing (SigDrop / Karate)",
+      "url": "https://cxsecurity.com/issue/WLB-2026110009",
+      "source": "CXSECURITY Database RSS Feed - CXSecurity.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "VisualStudio神级插件——JetBrains dotUltimate Resharper2026.3.0.2学习版",
+      "url": "https://masuit.net/20",
+      "source": "懒得勤快的博客_互联网分享精神",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Update Fri Nov 27 15:22:11 UTC 2026",
+      "url": "https://github.com/trickest/cve/commit/845970e1d23ff29365eee55f11a1f1fbf6a3c820",
+      "source": "Recent Commits to cve:main",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+      "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+      "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Turning the Raspberry Pi 5’s Onboard BCM43455 Wi-Fi Chip into a Receive-Only SDR",
+      "url": "https://www.rtl-sdr.com/turning-the-raspberry-pi-5s-onboard-bcm43455-wi-fi-chip-into-a-receive-only-sdr/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Turning a $26 ESP32-C5 Touchscreen Board into a Standalone KiwiSDR and Web888 Receiver",
+      "url": "https://www.rtl-sdr.com/turning-a-26-esp32-c5-touchscreen-board-into-a-standalone-kiwisdr-and-web888-receiver/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Troubleshooting Extraction Agent OTA Installation",
+      "url": "https://blog.elcomsoft.com/2026/11/troubleshooting-extraction-agent-ota-installation/",
+      "source": "ElcomSoft blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Tor Browser曝高危漏洞：恶意网站点击一次即可获取用户真实IP地址",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624654&idx=3&sn=798a28ca968f34b34b9d1c2cffbb6689",
+      "source": "看雪学苑",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "The Good, the Bad and the Ugly in Cybersecurity - Week 48 (2026)",
+      "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-48-8",
+      "source": "SentinelOne",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "The Cyber Express Weekly Cyber Roundup: AI Agents Breach Swiss Infrastructure, States Sue xAI Over Grok, and More",
+      "url": "https://thecyberexpress.com/weekly-roundup-ai-agents-xai-grok-nvidia/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "TIL: 在 Emacs 中用 dired 快速調整文件序號",
+      "url": "https://taxodium.ink/quickly-renumber-files-in-dired-in-emacs.html",
+      "source": "Taxodium",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "TIL: 在 Emacs 中用 dired 快速調整文件序號",
+      "url": "https://taxodium.ink/quickly-renumber-files-in-dired-in-emacs.html",
+      "source": "Taxodium",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Switzerland Confirms First Autonomous AI Agent Cyberattacks on Critical Infrastructure",
+      "url": "https://thecyberexpress.com/ai-agent-cyberattacks-hit-switzerland/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+      "url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Spyware: così una falsa app del Viminale prendeva di mira i richiedenti asilo - IrpiMedia",
+      "url": "https://www.irpimedia.eu/spyware-falsa-app-del-viminale-prendeva-di-mira-richiedenti-asilo/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "SolarWinds Serv-U 多个严重漏洞可被用于获得 root 权限并接管服务器",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2NTg4OTc5Nw==&mid=2247527836&idx=2&sn=c9631dedc33e3de6e7a37fdd26faf2c7",
+      "source": "代码卫士",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Software giant SAP confirms cyber incident amid reports of source code breach",
+      "url": "https://therecord.media/sap-germany-cyberattack-github",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Sintesi riepilogativa delle campagne malevole nella settimana del 21 – 27 novembre",
+      "url": "https://cert-agid.gov.it/news/sintesi-riepilogativa-delle-campagne-malevole-nella-settimana-del-21-27-novembre/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Saturn IE and RE: A 16-Bit FPGA and Raspberry Pi CM5 Based HF SDR Transceiver and Test Instrument Coming to Crowd Supply",
+      "url": "https://www.rtl-sdr.com/saturn-ie-and-re-a-16-bit-fpga-and-raspberry-pi-cm5-based-hf-sdr-transceiver-and-test-instrument-coming-to-crowd-supply/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Sad-Girls-0day-Club",
+      "url": "https://kitploit.com/en/tools/github/ekomssavior/sad-girls-0day-club",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Sad-Girls-0day-Club",
+      "url": "https://kitploit.com/en/tools/github/ekomssavior/sad-girls-0day-club",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "SVDB: A structured database for better vulnerability management",
+      "url": "https://positive.security/blog/svdb",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "SAP confirms security incident after suspicious GitHub activity",
+      "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "SAP Security Incident: Stolen Tokens Raise Supply Chain Concerns",
+      "url": "https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html",
+      "source": "Security Affairs",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+      "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+      "source": "SecurityWeek",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Russian Market: the stealer-log shop explained",
+      "url": "https://ransomnews.com/russian-market-stealer-logs-2026/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Ruflo MCP Bridge  3.16.2 Remote Code Execution",
+      "url": "https://cxsecurity.com/issue/WLB-2026110010",
+      "source": "CXSECURITY Database RSS Feed - CXSecurity.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Rinoa Poison: The Repoisoning Part 2 - SWN #637",
+      "url": "http://sites.libsyn.com/18678/rinoa-poison-the-repoisoning-part-2-swn-637",
+      "source": "Security Weekly Podcast Network (Audio)",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Reorganizing My iPhone Home Screen with an Agent and homescreen-mcp",
+      "url": "https://jimmysong.io/blog/orca-homescreen-mcp-iphone-home-screen/",
+      "source": "Jimmy Song – Jimmy Song's Blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Recent Outages Have Economic Causes",
+      "url": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+      "source": "Schneier on Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Real World CTF 战火重燃，带上你的智能体来「Cyber Arena」迎战真实世界！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwNDA2NDk5OQ==&mid=2651390897&idx=1&sn=4d8e0ee57be82701ab2a519d70470ffd",
+      "source": "长亭科技",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Real Life Is Already a Game",
+      "url": "https://danielmiessler.com/blog/real-life-is-already-a-game?utm_source=rss&utm_medium=feed&utm_campaign=website",
+      "source": "Daniel Miessler",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Rad Pro Random Number Generator",
+      "url": "https://blog.didierstevens.com/2026/11/27/rad-pro-random-number-generator/",
+      "source": "Didier Stevens",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Rad Gifts That Fund the Fight: EFF's Holiday Merch Guide for 2026",
+      "url": "https://www.eff.org/deeplinks/2026/11/rad-gifts-fund-fight-effs-holiday-merch-guide-2026",
+      "source": "Deeplinks",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Python纯协议实现亿级短视频app的直播间弹幕采集",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NTc2MDYxMw==&mid=2458624654&idx=1&sn=49c52cd612de71a69b69ef4cbbd48c64",
+      "source": "看雪学苑",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "OpenAI e Anthropic Hanno Violato La Crittografia RSA?",
+      "url": "http://darkwhite666.blogspot.com/2026/11/openai-e-anthropic-hanno-violato-la.html",
+      "source": "Dark Space Blogspot",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "New Boston Scientific data breach exposes personal, medical info",
+      "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "MultiScan SDR Update: Adds Satellite Tracking, a Learning Signal Classifier and Smarter Full Spectrum Scans",
+      "url": "https://www.rtl-sdr.com/multiscan-sdr-update-adds-satellite-tracking-a-learning-signal-classifier-and-smarter-full-spectrum-scans/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Microsoft removes WSUS server role in Windows Server 2028",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Memos: 购买了中兴 G5TS Pro 5G 路由器",
+      "url": "https://blog.yasking.org/a/1795779008",
+      "source": "东东's Blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Memos: 已严肃订阅日区哈基米",
+      "url": "https://blog.yasking.org/a/1795751127",
+      "source": "东东's Blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Memos: 哈基米 Neon 4 的可用性很高！",
+      "url": "https://blog.yasking.org/a/1795768775",
+      "source": "东东's Blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Marimar-3.1.0 2026 by Colorlib | SQLi",
+      "url": "https://cxsecurity.com/issue/WLB-2026110007",
+      "source": "CXSECURITY Database RSS Feed - CXSecurity.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Marimar-1.0 2026 by Colorlib | SQLi",
+      "url": "https://cxsecurity.com/issue/WLB-2026110008",
+      "source": "CXSECURITY Database RSS Feed - CXSecurity.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+      "url": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Malware steals Gmail messages using a fake Google Sheets extension",
+      "url": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
+      "source": "Malwarebytes",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Malware History – From Creeper to WannaCry and NotPetya",
+      "url": "https://www.darknet.org.uk/2026/11/malware-complete-history-viruses-stickler/",
+      "source": "Darknet.org.uk",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Malware History – From Creeper to WannaCry and NotPetya",
+      "url": "https://www.darknet.org.uk/2026/11/malware-complete-history-viruses-stickler/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "LuLu v4.6.0",
+      "url": "https://kitploit.com/en/posts/lulu-42c9ff0639e1b1e1",
+      "source": "Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "LuLu v4.6.0",
+      "url": "https://kitploit.com/en/posts/lulu-42c9ff0639e1b1e1",
+      "source": "KitPloit - PenTest Tools!",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Linux 版微信关掉窗口后点 Dock 图标没反应？摸清它的托盘激活逻辑，写个包装脚本彻底解决",
+      "url": "https://www.imaegoo.com/2026/linux-wechat-dock-tray-restore/",
+      "source": "虹墨空间站",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Ladybird Browser Launch Options",
+      "url": "https://blog.est.im/2026/stdout-43",
+      "source": "est の 输入 输出和出入",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Ladybird Browser Keyboard Shortcuts",
+      "url": "https://blog.est.im/2026/stdout-42",
+      "source": "est の 输入 输出和出入",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Japan’s education ministry discloses breach of government procurement system",
+      "url": "https://therecord.media/japan-education-ministry-cyberattack",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Intigriti Bug Bytes #242 - November 2026 🚀",
+      "url": "https://www.intigriti.com/researchers/blog/bug-bytes/intigriti-bug-bytes-242-november-2026",
+      "source": "Intigriti",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Interface Friction Is AI's Most Underrated Problem",
+      "url": "https://danielmiessler.com/blog/ai-interface-friction?utm_source=rss&utm_medium=feed&utm_campaign=website",
+      "source": "Daniel Miessler",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+      "url": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+      "source": "SecurityWeek",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "In Defence of Unidentified Keys",
+      "url": "https://javvadmalik.com/2026/11/27/in-defence-of-unidentified-keys/",
+      "source": "Javvad Malik",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "IDM完美开源替代——MisterDownloadManager 0.5.2",
+      "url": "https://masuit.net/1733",
+      "source": "懒得勤快的博客_互联网分享精神",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Hugging Face, but ASI",
+      "url": "https://danielmiessler.com/blog/hugging-face-but-asi?utm_source=rss&utm_medium=feed&utm_campaign=website",
+      "source": "Daniel Miessler",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Hex Package Manager Warns of Potential Data Breach",
+      "url": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+      "source": "SecurityWeek",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "source": "The Hacker News",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "HA接入大模型测试",
+      "url": "https://wangjiezhe.com/posts/2026-11-27-HA-MCP-Test/",
+      "source": "如鱼饮水",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Ground Station Update: Now Decodes ADS-B, Radiosondes, Meshtastic and APRS",
+      "url": "https://www.rtl-sdr.com/ground-station-update-now-decodes-ads-b-radiosondes-meshtastic-and-aprs/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Google账号改区？Gemini、Antigravity解封及地区修改指南",
+      "url": "https://51.ruyo.net/19820.html",
+      "source": "如有乐享",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Google AI Pro 黑五半价 $99.99 最后冲刺：网页端显示原价怎么破？",
+      "url": "https://kerrynotes.com/google-ai-pro-black-friday-half-price-guide/",
+      "source": "Kerry的学习笔记",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Friday Squid Blogging: Giant Squid in Newfoundland",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html",
+      "source": "Schneier on Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Fragments 0x0027",
+      "url": "https://lenciel.com/2026/11/fragments-0x0027/",
+      "source": "@Lenciel",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Formlabs Form Studio 1 Teardown",
+      "url": "https://www.bunniestudios.com/blog/2026/formlabs-form-studio-1-teardown/",
+      "source": "bunnie's blog",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "FIFA确认遭刑事网络攻击：自称黑客团体晒出内部文件，受影响数据不足0.1%；英伟达要求合作厂商停止向东南亚四国运送AI服务器｜牛览",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc3NjM4MA==&mid=2651143412&idx=2&sn=20c876f4c2af045be6ebd4de5e0c0b5e",
+      "source": "安全牛",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "FIFA Confirms a Cyberattack, Hackers Claim 12 GB of Internal Files",
+      "url": "https://securityaffairs.com/204100/data-breach/fifa-confirms-a-cyberattack-hackers-claim-12-gb-of-internal-files.html",
+      "source": "Security Affairs",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Drupal：站点接管超危漏洞已遭活跃利用",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI2NTg4OTc5Nw==&mid=2247527836&idx=1&sn=fac7a708c33af8fa161e4a45247948ab",
+      "source": "代码卫士",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Drupal warns of new site takeover flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Drupal sites are being hijacked, and a follow-up flaw is already under attack",
+      "url": "https://www.malwarebytes.com/blog/bugs/2026/11/drupal-sites-are-being-hijacked-and-a-follow-up-flaw-is-already-under-attack",
+      "source": "Malwarebytes",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Cyberattack disrupts global news distribution platform at France’s AFP",
+      "url": "https://therecord.media/france-afp-hit-by-cyberattack",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "CyberEther V2 Released: GPU-Accelerated SDR Flowgraphs with Python Blocks, Tiling Displays and an Optional AI Assistant",
+      "url": "https://www.rtl-sdr.com/cyberether-v2-released-gpu-accelerated-sdr-flowgraphs-with-python-blocks-tiling-displays-and-an-optional-ai-assistant/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "ClickFix: falsa verifica Cloudflare su un portale scolastico diffonde nuovo RAT Olympic 0.1.0",
+      "url": "https://cert-agid.gov.it/news/clickfix-falsa-verifica-cloudflare-su-un-portale-scolastico-diffonde-nuovo-rat-olympic-0-1-0/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Campagne APT e cyberspionaggio, breach e attacchi AI, falle inedite e sfruttate ITW",
+      "url": "https://www.telsy.com/campagne-apt-e-cyberspionaggio-breach-e-attacchi-ai-falle-inedite-e-sfruttate-itw/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "CERT-In Flags High-Severity Vulnerability in DIGIT e-Governance Platform",
+      "url": "https://thecyberexpress.com/cert-in-vulnerability-in-digit-platform/",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "British government takes services offline following ‘cyber incident’",
+      "url": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Banking AI XSS: The exploit is in the payment reference",
+      "url": "https://positive.security/blog/banking-ai-xss",
+      "source": "Over Security",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Airspace Monitor: A 24/7 Sydney Airband and ADS-B Station with Local AI Transcription and an ADS-B-Steered PTZ Camera",
+      "url": "https://www.rtl-sdr.com/airspace-monitor-a-24-7-sydney-airband-and-ads-b-station-with-local-ai-transcription-and-an-ads-b-steered-ptz-camera/",
+      "source": "rtl-sdr.com",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Air Force Cloud One Breach: Updates Blocked, Migration Paused, Scope Unknown",
+      "url": "https://securityaffairs.com/204136/security/air-force-cloud-one-breach-updates-blocked-migration-paused-scope-unknown.html",
+      "source": "Security Affairs",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "Agent 时代的编程语言",
+      "url": "https://hutusi.com/articles/agent-era-programming-languages/",
+      "source": "胡涂说",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "AI安全专题周报（20261127）",
+      "url": "https://blog.netlab.360.com/aian-quan-zhuan-ti-zhou-bao-20261127/",
+      "source": "360 Netlab Blog - Network Security Research Lab at 360",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "AI加速漏洞发现，但谁来解决漏洞修复难题？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkxNzA3MTgyNg==&mid=2247544669&idx=1&sn=cdaa5c64ac63e7b26ae946ceda98e141",
+      "source": "数世咨询",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "AI与云安全事件案例分析周报 | 2026年11月23日至11月27日",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyODYzNTU2OA==&mid=2247500463&idx=1&sn=322cdcc41efcdbb9415de44895916eea",
+      "source": "绿盟科技研究通讯",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "AI 时代，普通人也可以走进数学研究的现场",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUyMTUwMzI3Ng==&mid=2247486618&idx=1&sn=fdf6343b7a9660b0fa8182518e788f25",
+      "source": "OnionSec",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "3小时、200美元，AI挖出Java致命0day",
+      "url": "https://www.anquanke.com/post/id/316568",
+      "source": "安全客-有思想的安全新媒体",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "233boy 脚本 用 Caddy 申请 IP 证书 添加 Hysteria2 协议支持 默认安装 HY2 协议",
+      "url": "https://zelikk.blogspot.com/2026/11/233boy-caddy-ip-hysteria2-hy2.html",
+      "source": "ICDYCT / 我能, 你也行",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "2026年黑色星期五和网络星期一主机/域名/服务类活动收集",
+      "url": "https://51.ruyo.net/19783.html",
+      "source": "如有乐享",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "2026年CCF-绿盟科技“鲲鹏”科研基金项目申报指南",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU5MTM5MTQ2MA==&mid=2247496221&idx=1&sn=6ee68080053bbfccc35220c30e856358",
+      "source": "安全学术圈",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "2026 OSGJ 日志二：把战斗调试拆成看得见的场景",
+      "url": "https://xingwangzhe.fun/posts/osgj-devlog-2-debuggable-battle/",
+      "source": "姓王者的博客",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "100,000 Potentially Impacted by Colorado Data Breach",
+      "url": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+      "source": "SecurityWeek",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
+    {
+      "title": "#190 – 新書開始預購 / AI 設計網站的過程 /  ALL IN 全食飲 ®️雷蒙週報",
+      "url": "https://raymondhouch.com/newsletter/190/",
+      "source": "雷蒙三十｜幫助忙碌現代人的聰明工作、好好生活的生產力指南",
+      "date": "2026-11-28",
+      "page": "2026/2026-11-28.html"
+    },
     {
       "title": "黄仁勋复职后首次主持全员大会：向员工道歉；iPhone Duo 零部件成本创历代 iPhone 新高；Anthropic 跌破发行价｜极客早知道",
       "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117456&idx=1&sn=ab09cdbbdde47f58b685cef4ec64e770",
